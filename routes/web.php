@@ -25,6 +25,43 @@ use Laravel\Fortify\Http\Controllers\RegisteredUserController;
 |
 */
 
+Route::get('/index', function () {
+  return view('index');
+})->name('home');
+Route::get('/about', function () {
+  return view('about');
+})->name('about');
+Route::get('/appointment', function () {
+  return view('appointment');
+})->name('appointment');
+Route::get('/gallery', function () {
+  return view('gallery');
+})->name('gallery');
+Route::get('/services', function () {
+  return view('services');
+})->name('services');
+Route::get('/contact', function () {
+  return view('contact');
+})->name('contact');
+Route::get('/shop', function () {
+  return view('shop');
+})->name('shop');
+Route::get('/productDetails', function () {
+  return view('productDetails');
+})->name('productDetails');
+Route::get('/cart', function () {
+  return view('cart');
+})->name('cart');
+Route::get('/checkout', function () {
+  return view('checkout');
+})->name('checkout');
+
+Route::get('/user', function () {
+  return view('user');
+})->name('user');
+
+
+
 Route::middleware(['splade'])->group(function () {
     // Registers routes to support the interactive components...
     Route::spladeWithVueBridge();

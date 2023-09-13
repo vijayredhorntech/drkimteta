@@ -16,7 +16,8 @@ export default {
     ],
 
     theme: {
-        extend: {},
+        extend: {
+        },
     },
 
     plugins: [forms, typography],
