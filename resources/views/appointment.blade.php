@@ -56,7 +56,7 @@
                            <div class="flex">
                                <input type="text" placeholder="City" class="px-2 mt-4 py-1 bg-white border-[1px] py-2 border-gray-500 rounded-sm w-full">
                            </div>
-                           <button class="bg-[#3b664a] w-max text-white py-3 px-6 rounded-sm mx-auto  mt-4 ">Book Appointment</button>
+                           <button class="bg-[#437158] border-[1px] border-[#437158] text-white hover:bg-white hover:text-[#437158] hover:border-[1px] hover:border-[#437158] transition ease-in duration-200 w-max py-3 px-6 rounded-sm mx-auto  mt-4 ">Book Appointment</button>
 
 {{--                           <p  class=" text-[15px] text-green-500 mt-4">--}}
 {{--                               Your Appointment has been booked successfully.--}}

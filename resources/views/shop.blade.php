@@ -16,7 +16,11 @@
             <div class="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-2 grid-cols-1 gap-4 ">
                 <div class="w-full h-max rounded-md border-[1px] border-gray-300  hover:shadow-lg hover:shadow-gray-500 transition ease-in-out delay-150">
                     <div class="w-full h-72 bg-gray-100  rounded-md p-2 relative border-b-[1px] border-b-gray-300 overflow-hidden">
-                        <a href="{{route('productDetails')}}"> <img class="w-full h-full rounded-md object-cover hover:scale-110 transition ease-in-out duration-1000" src="{{asset('/assets/images/products/3.jpg')}}" alt=""></a>
+                        <a href="{{route('productDetails')}}"> <img class="w-full h-full rounded-md object-cover" src="{{asset('/assets/images/products/3.jpg')}}" alt=""></a>
+                          <div class=" w-full h-full absolute top-0 left-0 transition ease-in-out duration-1000 opacity-0 hover:opacity-100 p-2 ">
+                              <a href="{{route('productDetails')}}"> <img class="  w-full h-full rounded-md object-cover" src="{{asset('/assets/images/products/4.jpg')}}" alt=""></a>
+
+                          </div>
                         <img class="absolute top-0 left-0 h-12 w-12 rounded-md" src="{{asset('/assets/images/logo/logo (2).png')}}" alt="">
                     </div>
 
@@ -35,16 +39,15 @@
                         </div>
 
                         <div class="flex gap-2">
-                            <a href="{{route('cart')}}"><button class="bg-[#2f6246] text-white font-semibold lg:px-2 md:px-2 px-4 lg:py-1 md:py-1 py-3 rounded-sm text-xs">Add to Cart</button>
+                            <a href="{{route('cart')}}"><button class="bg-[#437158] border-[1px] border-[#437158] text-white hover:bg-white hover:text-[#437158] hover:border-[1px] hover:border-[#437158] transition ease-in duration-200 font-semibold lg:px-2 md:px-2 px-4 lg:py-1 md:py-1 py-3 rounded-sm text-xs">Add to Cart</button>
                             </a>
                             <a href="{{route('checkout')}}">
-                                <button class="bg-[#2f6246] text-white font-semibold lg:px-2 md:px-2 px-4 lg:py-1 md:py-1 py-3 rounded-sm text-xs">Buy Now</button>
+                                <button class="bg-[#437158] border-[1px] border-[#437158] text-white hover:bg-white hover:text-[#437158] hover:border-[1px] hover:border-[#437158] transition ease-in duration-200 font-semibold lg:px-2 md:px-2 px-4 lg:py-1 md:py-1 py-3 rounded-sm text-xs">Buy Now</button>
                             </a>
                         </div>
                     </div>
 
                 </div>
-
             </div>
 
         </div>

@@ -85,7 +85,7 @@
 
             </div>
             <div class="lg:w-1/2 md:w-1/2 w-full flex justify-center">
-                <div class="w-max h-max border-[10px] border-[#437158] bg-gray-200 p-6 text-left">
+                <div class="w-max h-max border-[10px] border-[#437158] rounded-tl-[50px] rounded-br-[50px] bg-gray-200 p-6 text-left">
                     <span class="font-['Amiri'] text-[25px] text-[#333] font-semibold">Get in touch</span>
                     <form action="" class="w-full flex flex-col">
                         <input type="text" placeholder="Your Name" class="px-2 mt-2 py-1 bg-white lg:w-96 md:w-96 sm:w-96 w-64">
@@ -93,12 +93,12 @@
                         <input type="number" placeholder="Number here" class="px-2 mt-2 py-1 bg-white lg:w-96 md:w-96 sm:w-96 w-64">
                         <textarea placeholder="Message here" name="" id="" cols="10" rows="5" class="px-2 mt-2 py-1 bg-white lg:w-96 md:w-96 sm:w-96 w-64"></textarea>
 
-                        <button class="bg-[#fa971c] w-max text-white py-2 px-6 rounded-full  mt-12 ">SUBMIT</button>
+                        <button class="bg-white border-[1px] border-[#437158] text-[#437158] hover:bg-[#437158] hover:text-white hover:border-[1px] hover:border-[#437158] transition ease-in duration-200 w-max py-2 px-6 rounded-full  mt-12 ">SUBMIT</button>
                     </form>
 
                 </div>
             </div>
         </div>
     </div>
-    
+
 @endsection
