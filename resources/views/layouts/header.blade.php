@@ -16,7 +16,7 @@
                 <div class="w-max h-full flex relative cursor-pointer" id="service" onclick="openService()">
                     <a class="my-auto hover:text-[#437158] hover:border-b-[2px] hover:border-b-[#437158] transition ease-in duration-200  "><li class="relative">SERVICE <i class="fa-solid fa-caret-down ml-1"></i></li></a>
 
-                    <ul id="serviceList" class=" absolute top-[100%] hidden  flex flex-col left-0 lg:w-max md:w-max w-[90vw] h-max lg:gap-8 md:gap-4 gap-8 lg:text-[17px] bg-white shadow-lg shadow-gray-300 text-black p-4" >
+                    <ul id="serviceList" class=" absolute top-[100%] hidden  hover:block flex flex-col left-0 lg:w-max md:w-max w-[90vw] h-max lg:gap-8 md:gap-4 gap-8 lg:text-[17px] bg-white shadow-lg shadow-gray-300 text-black p-4" >
                         <a href="{{route('services')}}" class="my-auto hover:text-[#437158] hover:border-b-[2px] hover:border-b-[#437158] transition ease-in duration-200  "> <li>Served companies</li></a>
                         <a href="{{route('services')}}" class="my-auto hover:text-[#437158] hover:border-b-[2px] hover:border-b-[#437158] transition ease-in duration-200  "> <li>Organic herbs/essential oils</li></a>
                         <a href="{{route('services')}}" class="my-auto hover:text-[#437158] hover:border-b-[2px] hover:border-b-[#437158] transition ease-in duration-200  "> <li>Plant installations</li></a>
