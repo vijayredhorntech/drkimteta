@@ -17,26 +17,7 @@
 @include('layouts.footer')
 
 
-<script>
 
-    function toggleNavbar() {
-        const navBar = document.getElementById('navBar');
-        navBar.classList.toggle('hidden');
-    }
-
-    function openService()
-    {
-        const serviceList = document.getElementById('serviceList');
-        serviceList.classList.toggle('hidden');
-    }
-    function openClinic()
-    {
-        const clinicList = document.getElementById('clinicList');
-        clinicList.classList.toggle('hidden');
-
-    }
-
-</script>
 
 <script>
     // Hide all tab content except the first tab when the page loads
