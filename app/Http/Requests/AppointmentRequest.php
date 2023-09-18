@@ -9,11 +9,10 @@ class AppointmentRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'name' => ['required'],
-            'phone' => ['required'],
+            'name' => ['required', 'max:254'],
+            'phone' => ['required', 'max:15'],
             'email' => ['required', 'email', 'max:254'],
-            'service_id' => ['required', 'integer'],
-            'clinic_id' => ['required', 'integer'],
+            'service_id' => ['required', 'integer','exists:services,id'],
             'city' => ['required'],
         ];
     }

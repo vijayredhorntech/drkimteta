@@ -2,10 +2,11 @@
 
 namespace App\Models;
 
-    use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Model;
 
-    class Product extends Model {
-        protected $fillable = [
+class Product extends Model
+{
+    protected $fillable = [
         'name',
         'price',
         'discount',
@@ -13,9 +14,22 @@ namespace App\Models;
         'ingredients',
         'dosage',
         'origin',
-        ];
+        'quantity',
+        'is_active',
+    ];
 
-        protected $casts = [
-        'ingredients' => 'array',
-        ];
+//    protected $casts = [
+//        'ingredients' => 'array',
+//    ];
+    public function media()
+    {
+        return $this->hasMany(ProductMedia::class);
     }
+
+    public function getImagesAttribute()
+    {
+        return $this->media->map(function ($media) {
+            return asset('storage/'.$media->media);
+        });
+    }
+}

@@ -14,7 +14,11 @@ class Appointment extends Model
         'phone',
         'email',
         'service_id',
-        'clinic_id',
         'city',
     ];
+    // belongs to service
+    public function service()
+    {
+        return $this->belongsTo(Service::class);
+    }
 }

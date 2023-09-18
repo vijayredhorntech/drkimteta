@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AppointmentController;
 use App\Http\Controllers\Dashboard\DashboardController;
 use App\Http\Controllers\Dashboard\LanguageController;
 use App\Http\Controllers\Dashboard\PermissionController;
@@ -8,6 +9,7 @@ use App\Http\Controllers\Dashboard\RoleController;
 use App\Http\Controllers\Dashboard\SettingController;
 use App\Http\Controllers\Dashboard\UserController;
 use App\Http\Controllers\Dashboard\TrafficsController;
+use App\Http\Controllers\ProductController;
 use App\Models\Language;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
@@ -24,41 +26,6 @@ use Laravel\Fortify\Http\Controllers\RegisteredUserController;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
-Route::get('/index', function () {
-  return view('index');
-})->name('home');
-Route::get('/about', function () {
-  return view('about');
-})->name('about');
-Route::get('/appointment', function () {
-  return view('appointment');
-})->name('appointment');
-Route::get('/gallery', function () {
-  return view('gallery');
-})->name('gallery');
-Route::get('/services', function () {
-  return view('services');
-})->name('services');
-Route::get('/contact', function () {
-  return view('contact');
-})->name('contact');
-Route::get('/shop', function () {
-  return view('shop');
-})->name('shop');
-Route::get('/productDetails', function () {
-  return view('productDetails');
-})->name('productDetails');
-Route::get('/cart', function () {
-  return view('cart');
-})->name('cart');
-Route::get('/checkout', function () {
-  return view('checkout');
-})->name('checkout');
-
-Route::get('/user', function () {
-  return view('user');
-})->name('user');
 
 
 
@@ -97,6 +64,43 @@ Route::middleware(['splade'])->group(function () {
         ]);
     });
 
+
+    Route::get('/index', function () {
+        return view('index');
+    })->name('home');
+    Route::get('/about', function () {
+        return view('about');
+    })->name('about');
+
+    Route::get('/appointment', [AppointmentController::class, 'client'])->name('appointment');
+
+    Route::get('/gallery', function () {
+        return view('gallery');
+    })->name('gallery');
+    Route::get('/services', function () {
+        return view('services');
+    })->name('services');
+    Route::get('/contact', function () {
+        return view('contact');
+    })->name('contact');
+    Route::get('/shop', function () {
+        return view('shop');
+    })->name('shop');
+    Route::get('/productDetails', function () {
+        return view('productDetails');
+    })->name('productDetails');
+    Route::get('/cart', function () {
+        return view('cart');
+    })->name('cart');
+    Route::get('/checkout', function () {
+        return view('checkout');
+    })->name('checkout');
+
+    Route::get('/user', function () {
+        return view('user');
+    })->name('user');
+
+
     Route::prefix('dashboard')->middleware(['auth:sanctum', config('jetstream.auth_session'), 'verified'])->name('dashboard.')->group(function () {
         Route::get('/', [DashboardController::class, 'index'])->name('index');
         Route::resource('user', UserController::class);
@@ -121,5 +125,19 @@ Route::middleware(['splade'])->group(function () {
             Route::post('/{plugin}/deactivate',[PluginController::class,'deactivate'])->name('deactivate');
             Route::post('/{plugin}/delete',[PluginController::class,'delete'])->name('delete');
         });
+
+        Route::prefix('appointment')->name('appointment.')->group(function () {
+            Route::get('/home', [AppointmentController::class, 'index'])->name('home');
+            Route::post('/store', [AppointmentController::class, 'store'])->name('store')->excludedMiddleware(['auth:sanctum', config('jetstream.auth_session'), 'verified']);
+        });
+        Route::prefix('products')->name('product.')->group(function(){
+            Route::get('/',[ProductController::class,'index'])->name('home');
+            Route::get('/create',[ProductController::class,'create'])->name('create');
+            Route::post('/store',[ProductController::class,'store'])->name('store');
+            Route::get('/{product}/edit',[ProductController::class,'edit'])->name('edit');
+            Route::post('/{product}/update',[ProductController::class,'update'])->name('update');
+            Route::delete('/{product}/delete',[ProductController::class,'delete'])->name('delete');
+        });
+
     });
 });
