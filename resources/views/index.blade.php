@@ -85,7 +85,7 @@
                </div>
             <div class="h-48 lg:w-[70%] md:w-[70%] w-[100%] bg-[#2f6246] flex flex-col px-2" style="justify-content: space-evenly">
                <i class="fa fa-phone p-[15px]  bg-white text-[#2f6246] w-max rounded-full mx-auto"></i>
-                <span class="mx-auto font-semibold text-white lg:text-xl">Need Consultancy? Call Us 98163-33352</span>
+                <span class="mx-auto font-semibold text-white lg:text-xl">Need Consultancy? Call Us +91ss 98163-33352</span>
                 <span class="mx-auto font-normal text-white text-sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, voluptates!</span>
             </div>
 
