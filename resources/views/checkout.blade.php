@@ -123,7 +123,7 @@
                         </div>
                         <div class="flex justify-end mt-2" >
                             <a href="{{route('checkout')}}">
-                                <button class="bg-[#2f6246] text-white font-semibold px-4 py-3 rounded-sm text-xs" >Place Order</button>
+                                <button class="bg-[#437158] border-[1px] border-[#437158] text-white hover:bg-white hover:text-[#437158] hover:border-[1px] hover:border-[#437158] transition ease-in duration-200 font-semibold px-8 py-3 rounded-sm text-sm" >Place Order</button>
                             </a>
                         </div>
                     </div>

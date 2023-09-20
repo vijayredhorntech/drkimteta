@@ -41,7 +41,7 @@
                         </div>
 
                         <div class="my-auto flex flex-col ">
-                            <button class="bg-[#2f6246] text-white font-semibold p-2 rounded-sm text-xs" > <i class="fa-solid fa-xmark"></i></button>
+                            <button class="bg-[#437158] border-[1px] border-[#437158] text-white hover:bg-white hover:text-[#437158] hover:border-[1px] hover:border-[#437158] transition ease-in duration-200 font-semibold p-2 rounded-sm text-xs" > <i class="fa-solid fa-xmark"></i></button>
                         </div>
 
                     </div>
@@ -68,7 +68,7 @@
                         </div>
 
                         <div class="my-auto flex flex-col ">
-                            <button class="bg-[#2f6246] text-white font-semibold p-2 rounded-sm text-xs" > <i class="fa-solid fa-xmark"></i></button>
+                            <button class="bg-[#437158] border-[1px] border-[#437158] text-white hover:bg-white hover:text-[#437158] hover:border-[1px] hover:border-[#437158] transition ease-in duration-200 font-semibold p-2 rounded-sm text-xs" > <i class="fa-solid fa-xmark"></i></button>
                         </div>
 
                     </div>
@@ -77,7 +77,7 @@
                 <div class="w-full">
                     <div class="w-full flex justify-end">
                         <a href="{{route('shop')}}">
-                            <button class="bg-[#2f6246] text-white font-semibold px-4 py-3 rounded-sm text-xs" >Continue Shopping </button>
+                            <button class="bg-[#437158] border-[1px] border-[#437158] text-white hover:bg-white hover:text-[#437158] hover:border-[1px] hover:border-[#437158] transition ease-in duration-200 font-semibold px-4 py-3 rounded-sm text-xs" >Continue Shopping </button>
                         </a>
                     </div>
                 </div>
@@ -90,8 +90,8 @@
                                 <span class="text-[#707070] text-[16px]">Coupon Discount</span>
                             </div>
                             <div class="font-bold text-[20px] text-black mb-4">
-                                <input class="width-[200px] border-[1px] border-black rounded-sm py-1" type="text">
-                                <button class="bg-[#2f6246] text-white font-semibold px-4 py-3 rounded-sm text-xs" >Apply Coupon</button>
+                                <input class="width-[200px] border-[1px] border-black rounded-sm py-2" type="text">
+                                <button class="bg-[#437158] border-[1px] border-[#437158] text-white hover:bg-white hover:text-[#437158] hover:border-[1px] hover:border-[#437158] transition ease-in duration-200 font-semibold px-4 py-3 rounded-sm text-xs ml-4" >Apply Coupon</button>
                             </div>
                         </div>
 
@@ -115,7 +115,7 @@
                         </div>
                         <div class="flex justify-end p-2">
                             <a href="{{route('checkout')}}">
-                                <button class="bg-[#2f6246] text-white font-semibold px-4 py-3 rounded-sm text-xs" >Proceed to Checkout</button>
+                                <button class="bg-[#437158] border-[1px] border-[#437158] text-white hover:bg-white hover:text-[#437158] hover:border-[1px] hover:border-[#437158] transition ease-in duration-200 font-semibold px-4 py-3 rounded-sm text-xs" >Proceed to Checkout</button>
 
                             </a>
                         </div>

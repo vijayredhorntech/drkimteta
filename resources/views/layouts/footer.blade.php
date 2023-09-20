@@ -39,7 +39,7 @@
             <span class="text-white font-semibold text-xl">Address</span>
             <div class="text-gray-100 font-normal text-md flex flex-col gap-2 mt-4">
                 <a href="" class="hover:text-[#437158]"><i class="fa fa-location text-gray-300 mr-2"></i><span> SCO 15, 8TH Floor The Hermitage Plaza, Dhakoli, Zirakpur ,PB</span></a>
-                <a href="" class="hover:text-[#437158]"><i class="fa fa-phone text-gray-300 mr-2"></i><span> 98163-33352</span></a>
+                <a href="" class="hover:text-[#437158]"><i class="fa fa-phone text-gray-300 mr-2"></i><span>+91 98163-33352</span></a>
                 <a href="" class="hover:text-[#437158]"><i class="fa fa-envelope text-gray-300 mr-2"></i><span>vijaykimtata.vk@gmail.com</span></a>
             </div>
         </div>

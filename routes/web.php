@@ -99,6 +99,9 @@ Route::middleware(['splade'])->group(function () {
     Route::get('/user', function () {
         return view('user');
     })->name('user');
+    Route::get('/clients', function () {
+        return view('clients');
+    })->name('clients');
 
 
     Route::prefix('dashboard')->middleware(['auth:sanctum', config('jetstream.auth_session'), 'verified'])->name('dashboard.')->group(function () {

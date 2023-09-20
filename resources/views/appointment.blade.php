@@ -27,11 +27,11 @@
             </div>
 
             <div class=" lg:w-[60%] w-full px-2 mx-auto flex lg:flex-row md:flex-row flex-col mt-4 gap-6">
-                <div class="lg:w-1/2 md:w-1/2 w-full lg:h-[500px] md:h-[500px] h-[300px] flex justify-center">
+                <div class="lg:w-1/2 md:w-1/2 w-full lg:h-6500px] md:h-[600px] h-[300px] flex justify-center">
                     <img class="w-full h-full object-cover rounded-md"
                          src="{{asset('/assets/images/appointment/book-appointment.png')}}" alt="">
                 </div>
-                <div class="lg:w-1/2 md:w-1/2 w-full h-[500px] flex justify-center">
+                <div class="lg:w-1/2 md:w-1/2 w-full h-[600px] flex justify-center">
                     <div class="w-full h-full  bg-white p-6 text-left flex flex-col rounded-md">
                         <span class=" text-[35px] text-gray-500 font-semibold mx-auto">Make an Appointment</span>
                         <p class=" text-[15px] text-gray-500">

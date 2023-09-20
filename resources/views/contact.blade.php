@@ -31,7 +31,7 @@
                             <div class="flex">
                                 <textarea  placeholder="Email Address" class="px-2 mt-4 py-1 bg-white  py-2 shadow-md focus:ring-0 focus:outline-none border-0 shadow-gray-200 rounded-sm w-full"></textarea>
                             </div>
-                            <button class="bg-[#3b664a] w-max text-white py-2 px-4 rounded-sm mt-4 ">Submit</button>
+                            <button class="bg-[#437158] border-[1px] border-[#437158] text-white hover:bg-white hover:text-[#437158] hover:border-[1px] hover:border-[#437158] transition ease-in duration-200 w-max py-2 px-8 rounded-sm mt-4 ">Submit</button>
 
                             {{--                           <p  class=" text-[15px] text-green-500 mt-4">--}}
                             {{--                               Your Appointment has been booked successfully.--}}
