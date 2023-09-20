@@ -66,11 +66,11 @@
                         <span class="font-bold text-black text-[15px] mt-2">Country of Origin: India</span>
                         <div class="w-full flex justify-end gap-4 mt-2">
                             <a href="{{route('cart')}}">
-                                <button class="bg-[#2f6246] text-white font-semibold px-4 py-3 rounded-sm text-xs" >Add To Cart</button>
+                                <button class="bg-[#437158] border-[1px] border-[#437158] text-white hover:bg-white hover:text-[#437158] hover:border-[1px] hover:border-[#437158] transition ease-in duration-200 font-semibold px-4 py-3 rounded-sm text-xs" >Add To Cart</button>
                             </a>
 
                             <a href="{{route('checkout')}}">
-                                <button class="bg-[#2f6246] text-white font-semibold px-4 py-3 rounded-sm text-xs">Buy Now</button>
+                                <button class="bg-[#437158] border-[1px] border-[#437158] text-white hover:bg-white hover:text-[#437158] hover:border-[1px] hover:border-[#437158] transition ease-in duration-200 font-semibold px-4 py-3 rounded-sm text-xs">Buy Now</button>
                             </a>
 
                         </div>
@@ -81,21 +81,21 @@
                <div class="w-full px-2 mb-4">
                    <div class="w-full mt-8 border-[1px] border-[green] rounded-lg">
                        <div class="w-full font-bold text-black text-[20px] bg-gray-100 rounded-lg grid lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-3 grid-cols-1 gap-2">
-                           <div class="w-full cursor-pointer px-4 py-1 rounded-lg h-full flex">
-                               <div class="tab mainTab active"
+                           <div class="w-full cursor-pointer px-4 rounded-lg h-full flex">
+                               <div class="tab mainTab bg-[#437158] text-white rounded-md hover:text-[#437158] hover:bg-white hover:border-[1px] hover:border-[#437158] py-2 px-6 border-[1px] border-gray-100 transition ease-in duration-200"
                                     onclick="openTab(event, 'tab1')">
                                    <span>Description</span>
                                </div>
                            </div>
-                           <div class="w-full cursor-pointer px-4 py-1 rounded-lg h-full flex">
-                               <div class="tab mainTab "
+                           <div class="w-full cursor-pointer px-4 rounded-lg h-full flex">
+                               <div class="tab mainTab rounded-md hover:text-[#437158] hover:bg-white hover:border-[1px] hover:border-[#437158] py-2 px-6 border-[1px] border-gray-100 transition ease-in duration-200"
                                     onclick="openTab(event, 'tab2')">
                                    <span>Ingredients</span>
                                </div>
                            </div>
-                           <div class="w-full cursor-pointer px-4 py-1 rounded-lg h-full flex">
+                           <div class="w-full cursor-pointer px-4 rounded-lg h-full flex">
 
-                               <div class="tab mainTab "
+                               <div class="tab mainTab rounded-md hover:text-[#437158] hover:bg-white hover:border-[1px] hover:border-[#437158] py-2 px-6 border-[1px] border-gray-100 transition ease-in duration-200"
                                     onclick="openTab(event, 'tab3')">
                                    <span>Dosage</span>
                                </div>
@@ -103,7 +103,7 @@
                        </div>
 
 
-                       <div class="w-full bg-[#e4f8e4] p-4 rounded-lg">
+                       <div class="w-full bg-white p-4 rounded-lg">
                            <div class="tab-content" id="tab1">
                        <span class="font-bold text-black text-[15px]">
                            Being enriched with Vitamin C, Vitamin B, potassium, magnesium, calcium, zinc, copper, and Iron, Bael powder may help you maintain good digestion, health, and cholesterol level.

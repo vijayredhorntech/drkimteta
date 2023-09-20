@@ -28,7 +28,8 @@
     });
 
     // Add the 'active' class to the first tab and 'active-tab' to the first default tab when the page loads
-    document.querySelector(".mainTab").classList.add("active");
+    document.querySelector(".mainTab").classList.add("bg-[#437158]");
+    document.querySelector(".mainTab").classList.add("text-white");
     document.querySelector(".mainTab").classList.add("active-tab");
 
     function openTab(event, tabId) {
@@ -39,12 +40,14 @@
 
         // Get all tab elements and remove "active" class
         document.querySelectorAll(".mainTab").forEach(function(tab) {
-            tab.classList.remove("active");
+            tab.classList.remove("bg-[#437158]");
+            tab.classList.remove("text-white");
         });
 
         // Show the selected tab content and mark the corresponding tab as active
         document.getElementById(tabId).style.display = "block";
-        event.currentTarget.classList.add("active");
+        event.currentTarget.classList.add("bg-[#437158]");
+        event.currentTarget.classList.add("text-white");
 
         // Remove the 'active-tab' class from other tabs
         document.querySelectorAll(".tab.mainTab").forEach(function(tab) {
