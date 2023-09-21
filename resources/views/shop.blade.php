@@ -17,11 +17,26 @@
                 <div class="w-full h-max rounded-md border-[1px] border-gray-300  hover:shadow-lg hover:shadow-gray-500 transition ease-in-out delay-150">
                     <div class="w-full h-72 bg-gray-100  rounded-md p-2 relative border-b-[1px] border-b-gray-300 overflow-hidden">
                         <a href="{{route('productDetails')}}"> <img class="w-full h-full rounded-md object-cover" src="{{asset('/assets/images/products/3.jpg')}}" alt=""></a>
-                          <div class=" w-full h-full absolute top-0 left-0 transition ease-in-out duration-1000 opacity-0 hover:opacity-100 p-2 ">
-                              <a href="{{route('productDetails')}}"> <img class="  w-full h-full rounded-md object-cover" src="{{asset('/assets/images/products/4.jpg')}}" alt=""></a>
+                        <img class="absolute top-0 left-0 h-12 w-12 rounded-md z-10" src="{{asset('/assets/images/logo/logo (2).png')}}" alt="">
+                        <div class="absolute top-0 left-0 w-full h-full p-2 opacity-0 hover:opacity-100 rounded-md transition ease-in duration-200 ">
+                            <div class="w-full h-full relative">
+                                <a href="{{route('productDetails')}}"><img  class="w-full h-full rounded-t-md object-cover" src="{{asset('/assets/images/products/2.jpg')}}" alt="">
+                                </a>
 
-                          </div>
-                        <img class="absolute top-0 left-0 h-12 w-12 rounded-md" src="{{asset('/assets/images/logo/logo (2).png')}}" alt="">
+                                <div class="absolute top-0 right-0 w-max h-max flex flex-col gap-2 p-4">
+                                    <a href="{{route('wishlist')}}"><button class="bg-white border-[1px] border-[#437158] text-[#437158] hover:bg-[#437158] hover:text-white hover:border-[1px] hover:border-[#437158] transition ease-in duration-200 p-2 rounded-sm"><i class="fa fa-heart"></i></button>
+                                    </a>
+                                    <a href="{{route('cart')}}"><button class="bg-white border-[1px] border-[#437158] text-[#437158] hover:bg-[#437158] hover:text-white hover:border-[1px] hover:border-[#437158] transition ease-in duration-200 p-2 rounded-sm"><i class="fa fa-shopping-cart"></i></button>
+                                    </a>
+                                </div>
+
+                                <div class="absolute bottom-2 left-0  w-full px-6">
+                                    <a href="{{route('productDetails')}}"><button class=" bg-white border-[1px] border-[#437158] text-[#437158] hover:bg-[#437158] hover:text-white hover:border-[1px] hover:border-[#437158] transition ease-in duration-200 w-full  p-2 rounded-sm font-semibold"><i class="fa fa-eye mr-1"></i> View Details</button>
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
                     </div>
 
                     <div class="p-2 flex flex-col">
@@ -50,12 +65,27 @@
                 </div>
                 <div class="w-full h-max rounded-md border-[1px] border-gray-300  hover:shadow-lg hover:shadow-gray-500 transition ease-in-out delay-150">
                     <div class="w-full h-72 bg-gray-100  rounded-md p-2 relative border-b-[1px] border-b-gray-300 overflow-hidden">
-                        <a href="{{route('productDetails')}}"> <img class="w-full h-full rounded-md object-cover" src="{{asset('/assets/images/products/3.jpg')}}" alt=""></a>
-                        <div class=" w-full h-full absolute top-0 left-0 transition ease-in-out duration-1000 opacity-0 hover:opacity-100 p-2 ">
-                            <a href="{{route('productDetails')}}"> <img class="  w-full h-full rounded-md object-cover" src="{{asset('/assets/images/products/4.jpg')}}" alt=""></a>
+                        <a href="{{route('productDetails')}}"> <img class="w-full h-full rounded-md object-cover" src="{{asset('/assets/images/products/4.jpg')}}" alt=""></a>
+                        <img class="absolute top-0 left-0 h-12 w-12 rounded-md z-10" src="{{asset('/assets/images/logo/logo (2).png')}}" alt="">
+                        <div class="absolute top-0 left-0 w-full h-full p-2 opacity-0 hover:opacity-100 rounded-md transition ease-in duration-200 ">
+                            <div class="w-full h-full relative">
+                                <a href="{{route('productDetails')}}"><img  class="w-full h-full rounded-t-md object-cover" src="{{asset('/assets/images/products/1.jpg')}}" alt="">
+                                </a>
+
+                                <div class="absolute top-0 right-0 w-max h-max flex flex-col gap-2 p-4">
+                                    <a href="{{route('wishlist')}}"><button class="bg-white border-[1px] border-[#437158] text-[#437158] hover:bg-[#437158] hover:text-white hover:border-[1px] hover:border-[#437158] transition ease-in duration-200 p-2 rounded-sm"><i class="fa fa-heart"></i></button>
+                                    </a>
+                                    <a href="{{route('cart')}}"><button class="bg-white border-[1px] border-[#437158] text-[#437158] hover:bg-[#437158] hover:text-white hover:border-[1px] hover:border-[#437158] transition ease-in duration-200 p-2 rounded-sm"><i class="fa fa-shopping-cart"></i></button>
+                                    </a>
+                                </div>
+
+                                <div class="absolute bottom-2 left-0  w-full px-6">
+                                    <a href="{{route('productDetails')}}"><button class=" bg-white border-[1px] border-[#437158] text-[#437158] hover:bg-[#437158] hover:text-white hover:border-[1px] hover:border-[#437158] transition ease-in duration-200 w-full  p-2 rounded-sm font-semibold"><i class="fa fa-eye mr-1"></i> View Details</button>
+                                    </a>
+                                </div>
+                            </div>
 
                         </div>
-                        <img class="absolute top-0 left-0 h-12 w-12 rounded-md" src="{{asset('/assets/images/logo/logo (2).png')}}" alt="">
                     </div>
 
                     <div class="p-2 flex flex-col">
@@ -84,80 +114,27 @@
                 </div>
                 <div class="w-full h-max rounded-md border-[1px] border-gray-300  hover:shadow-lg hover:shadow-gray-500 transition ease-in-out delay-150">
                     <div class="w-full h-72 bg-gray-100  rounded-md p-2 relative border-b-[1px] border-b-gray-300 overflow-hidden">
-                        <a href="{{route('productDetails')}}"> <img class="w-full h-full rounded-md object-cover" src="{{asset('/assets/images/products/3.jpg')}}" alt=""></a>
-                        <div class=" w-full h-full absolute top-0 left-0 transition ease-in-out duration-1000 opacity-0 hover:opacity-100 p-2 ">
-                            <a href="{{route('productDetails')}}"> <img class="  w-full h-full rounded-md object-cover" src="{{asset('/assets/images/products/4.jpg')}}" alt=""></a>
+                        <a href="{{route('productDetails')}}"> <img class="w-full h-full rounded-md object-cover" src="{{asset('/assets/images/products/2.jpg')}}" alt=""></a>
+                        <img class="absolute top-0 left-0 h-12 w-12 rounded-md z-10" src="{{asset('/assets/images/logo/logo (2).png')}}" alt="">
+                        <div class="absolute top-0 left-0 w-full h-full p-2 opacity-0 hover:opacity-100 rounded-md transition ease-in duration-200 ">
+                            <div class="w-full h-full relative">
+                                <a href="{{route('productDetails')}}"><img  class="w-full h-full rounded-t-md object-cover" src="{{asset('/assets/images/products/1.jpg')}}" alt="">
+                                </a>
+
+                                <div class="absolute top-0 right-0 w-max h-max flex flex-col gap-2 p-4">
+                                    <a href="{{route('wishlist')}}"><button class="bg-white border-[1px] border-[#437158] text-[#437158] hover:bg-[#437158] hover:text-white hover:border-[1px] hover:border-[#437158] transition ease-in duration-200 p-2 rounded-sm"><i class="fa fa-heart"></i></button>
+                                    </a>
+                                    <a href="{{route('cart')}}"><button class="bg-white border-[1px] border-[#437158] text-[#437158] hover:bg-[#437158] hover:text-white hover:border-[1px] hover:border-[#437158] transition ease-in duration-200 p-2 rounded-sm"><i class="fa fa-shopping-cart"></i></button>
+                                    </a>
+                                </div>
+
+                                <div class="absolute bottom-2 left-0  w-full px-6">
+                                    <a href="{{route('productDetails')}}"><button class=" bg-white border-[1px] border-[#437158] text-[#437158] hover:bg-[#437158] hover:text-white hover:border-[1px] hover:border-[#437158] transition ease-in duration-200 w-full  p-2 rounded-sm font-semibold"><i class="fa fa-eye mr-1"></i> View Details</button>
+                                    </a>
+                                </div>
+                            </div>
 
                         </div>
-                        <img class="absolute top-0 left-0 h-12 w-12 rounded-md" src="{{asset('/assets/images/logo/logo (2).png')}}" alt="">
-                    </div>
-
-                    <div class="p-2 flex flex-col">
-                        <a href="{{route('productDetails')}}">
-                            <span class="text-black font-bold text-[20px]">Vitamin A</span>
-
-                        </a>
-                        <span class="text-gray-500 font-normal text-[14px]"> No Reveiws Yet</span>
-                    </div>
-
-                    <div class="flex justify-between p-2">
-                        <div>
-                            <span class="text-black font-bold text-[20px]">₹ 890</span>
-
-                        </div>
-
-                        <div class="flex gap-2">
-                            <a href="{{route('cart')}}"><button class="bg-[#437158] border-[1px] border-[#437158] text-white hover:bg-white hover:text-[#437158] hover:border-[1px] hover:border-[#437158] transition ease-in duration-200 font-semibold lg:px-2 md:px-2 px-4 lg:py-1 md:py-1 py-3 rounded-sm text-xs">Add to Cart</button>
-                            </a>
-                            <a href="{{route('checkout')}}">
-                                <button class="bg-[#437158] border-[1px] border-[#437158] text-white hover:bg-white hover:text-[#437158] hover:border-[1px] hover:border-[#437158] transition ease-in duration-200 font-semibold lg:px-2 md:px-2 px-4 lg:py-1 md:py-1 py-3 rounded-sm text-xs">Buy Now</button>
-                            </a>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="w-full h-max rounded-md border-[1px] border-gray-300  hover:shadow-lg hover:shadow-gray-500 transition ease-in-out delay-150">
-                    <div class="w-full h-72 bg-gray-100  rounded-md p-2 relative border-b-[1px] border-b-gray-300 overflow-hidden">
-                        <a href="{{route('productDetails')}}"> <img class="w-full h-full rounded-md object-cover" src="{{asset('/assets/images/products/3.jpg')}}" alt=""></a>
-                        <div class=" w-full h-full absolute top-0 left-0 transition ease-in-out duration-1000 opacity-0 hover:opacity-100 p-2 ">
-                            <a href="{{route('productDetails')}}"> <img class="  w-full h-full rounded-md object-cover" src="{{asset('/assets/images/products/4.jpg')}}" alt=""></a>
-
-                        </div>
-                        <img class="absolute top-0 left-0 h-12 w-12 rounded-md" src="{{asset('/assets/images/logo/logo (2).png')}}" alt="">
-                    </div>
-
-                    <div class="p-2 flex flex-col">
-                        <a href="{{route('productDetails')}}">
-                            <span class="text-black font-bold text-[20px]">Vitamin A</span>
-
-                        </a>
-                        <span class="text-gray-500 font-normal text-[14px]"> No Reveiws Yet</span>
-                    </div>
-
-                    <div class="flex justify-between p-2">
-                        <div>
-                            <span class="text-black font-bold text-[20px]">₹ 890</span>
-
-                        </div>
-
-                        <div class="flex gap-2">
-                            <a href="{{route('cart')}}"><button class="bg-[#437158] border-[1px] border-[#437158] text-white hover:bg-white hover:text-[#437158] hover:border-[1px] hover:border-[#437158] transition ease-in duration-200 font-semibold lg:px-2 md:px-2 px-4 lg:py-1 md:py-1 py-3 rounded-sm text-xs">Add to Cart</button>
-                            </a>
-                            <a href="{{route('checkout')}}">
-                                <button class="bg-[#437158] border-[1px] border-[#437158] text-white hover:bg-white hover:text-[#437158] hover:border-[1px] hover:border-[#437158] transition ease-in duration-200 font-semibold lg:px-2 md:px-2 px-4 lg:py-1 md:py-1 py-3 rounded-sm text-xs">Buy Now</button>
-                            </a>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="w-full h-max rounded-md border-[1px] border-gray-300  hover:shadow-lg hover:shadow-gray-500 transition ease-in-out delay-150">
-                    <div class="w-full h-72 bg-gray-100  rounded-md p-2 relative border-b-[1px] border-b-gray-300 overflow-hidden">
-                        <a href="{{route('productDetails')}}"> <img class="w-full h-full rounded-md object-cover" src="{{asset('/assets/images/products/3.jpg')}}" alt=""></a>
-                        <div class=" w-full h-full absolute top-0 left-0 transition ease-in-out duration-1000 opacity-0 hover:opacity-100 p-2 ">
-                            <a href="{{route('productDetails')}}"> <img class="  w-full h-full rounded-md object-cover" src="{{asset('/assets/images/products/4.jpg')}}" alt=""></a>
-
-                        </div>
-                        <img class="absolute top-0 left-0 h-12 w-12 rounded-md" src="{{asset('/assets/images/logo/logo (2).png')}}" alt="">
                     </div>
 
                     <div class="p-2 flex flex-col">
