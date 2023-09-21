@@ -18,6 +18,27 @@
                     <li><img class="w-full object-cover lg:h-[600px] md:h-[400px]  h-[400px]" src="{{asset('/assets/images/slider/10.jpg')}}"></li>
                 </ul>
 
+
+                <div class="bg-[#fa971c] rounded-tl-3xl rounded-br-3xl h-max w-max px-4 py-2 absolute left-[30px] bottom-[30px] z-10 ">
+                    <div class=" mt-0 flex">
+                        <a href="https://www.behance.net/swasthyherboco1" target="_blank" class="mr-3 block">
+                            <button
+                                class="bg-[#437158] border-[1px] border-[#437158] text-white hover:bg-white hover:text-[#437158] hover:border-[1px] hover:border-[#437158] transition ease-in duration-200 px-2 py-1 rounded-full">
+                                <i class="fa-brands fa-behance"></i></button>
+                        </a>
+                        <a href="https://www.reddit.com/user/SwasthyaHerbo/submitted/" target="_blank" class="mr-3 block">
+                            <button
+                                class="bg-[#437158] border-[1px] border-[#437158] text-white hover:bg-white hover:text-[#437158] hover:border-[1px] hover:border-[#437158] transition ease-in duration-200 px-2 py-1 rounded-full">
+                                <i class="fa-brands fa-reddit"></i></button>
+                        </a>
+                        <a href="https://www.instagram.com/swaasthya.nature/" target="_blank" class="mr-3 block">
+                            <button
+                                class="bg-[#437158] border-[1px] border-[#437158] text-white hover:bg-white hover:text-[#437158] hover:border-[1px] hover:border-[#437158] transition ease-in duration-200 px-2 py-1 rounded-full">
+                                <i class="fa fa-instagram"></i></button>
+                        </a>
+                    </div>
+                </div>
+
                 <button type="button" class="slider-nav"></button>
                 <button type="button" class="slider-nav slider-nav-next"></button>
 
@@ -83,10 +104,10 @@
                <div class="h-48 lg:w-[30%] md:w-[30%] w-[100%]">
                    <img class="h-full w-full" src="{{asset('/assets/images/home/smallbanner.jpg')}}" alt="">
                </div>
-            <div class="h-48 lg:w-[70%] md:w-[70%] w-[100%] bg-[#2f6246] flex flex-col px-2" style="justify-content: space-evenly">
+            <div class="lg:h-48 md:h-48 h-max lg:w-[70%] md:w-[70%] w-[100%] bg-[#2f6246] flex flex-col px-6 py-4" style="justify-content: space-evenly">
                <i class="fa fa-phone p-[15px]  bg-white text-[#2f6246] w-max rounded-full mx-auto"></i>
-                <span class="mx-auto font-semibold text-white lg:text-xl">Need Consultancy? Call Us +91ss 98163-33352</span>
-                <span class="mx-auto font-normal text-white text-sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, voluptates!</span>
+                <span class="mx-auto font-semibold text-white lg:text-xl">Need Consultancy? Call Us +91 98163-33352</span>
+                <span class="mx-auto font-normal text-white text-sm">If you're seeking expert guidance and consultancy, look no further. We're here to assist you with a wide range of professional services tailored to meet your specific needs. Our team of experienced consultants is just a phone call away at +91 98163-33352. Whether you have questions, require advice, or need assistance, we're ready to provide you with the support you need. Don't hesitate to reach out; we're committed to helping you achieve your goals.</span>
             </div>
 
 
@@ -107,8 +128,10 @@
         <div class="h-max bg:w-[65%] md:w-[65%] w-[100%] flex-col px-2 pl-4">
             <span class="font-semibold text-[#fa971c] text-[14px]" style="letter-spacing: 1px">OUR MOTIVE IS TO BUILD A HEALTHY INDIA & BELIEVE US WE WILL DO IT</span><br>
             <h1 class="font-['Amiri'] text-[30px] text-[#333] font-semibold mt-2">Meet Our Founder</h1>
-            <p class="text-[#888] text-[18px] font-normal text-justify mt-4" style="letter-spacing: 0.7px">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum delectus earum eligendi eos et ex ipsum iusto, nemo optio quasi, rem sunt vero voluptate. Dolores eligendi natus omnis quia voluptatem. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam aspernatur assumenda atque cupiditate distinctio, explicabo natus nesciunt optio repellendus voluptatem. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere itaque, possimus! Aliquam assumenda consectetur ipsam ipsum, mollitia odit sed velit.</p>
-            <button class="bg-[#437158] border-[1px] border-[#437158] text-white hover:bg-white hover:text-[#437158] hover:border-[1px] hover:border-[#437158] transition ease-in duration-200 px-8 py-3 h-max my-auto text-sm font rounded-sm font-bold w-max mt-4 ">Read More</button>
+            <p id="clinicalTrial" class="text-[#888] text-[18px] font-normal text-justify mt-4" style="letter-spacing: 0.7px">
+                Under the leadership of our mentor <span class="font-bold text-gray-500">“ Dr Vijay Kimtata ” </span>We have successfully developed more than 2000 result oriented formulations for our clients & few of them are well renowned brands today like Mother Sparsh, Roop Mantra, Petsaffa,Dr Ortho.
+            </p>
+{{--            <button class="bg-[#437158] border-[1px] border-[#437158] text-white hover:bg-white hover:text-[#437158] hover:border-[1px] hover:border-[#437158] transition ease-in duration-200 px-8 py-3 h-max my-auto text-sm font rounded-sm font-bold w-max mt-4 ">Read More</button>--}}
         </div>
 
 

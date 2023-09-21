@@ -18,7 +18,7 @@
                     Since our foundation in 2006,We Swasthya Herbocosmetics are recognised in the business as one of the main associates which is locked in as a specialist organisation of an extensive scope of Ayurvedic consultancy services which includes all types of liosining,Ayurvedic Regulatory services for plant Mfg license,GMP Certifications,Formulation Designs & Approvals from FDA & State Ayush Board, Plant inspections,Legal Queries, Clinical Trial & Customer complaint handling.
                 </p>
                 <p id="clinicalTrial" class="text-[#888] text-[18px] font-normal text-justify mt-4" style="letter-spacing: 0.7px">
-                    Under the headership of our mentor <span class="font-bold text-gray-500">“ Dr Vijay Kimtata ” </span>We have successfully developed more than 2000 result oriented formulations for our clients & few of them are well renowned brands today like Mother Sparsh, Roop Mantra, Petsaffa,Dr Ortho.
+                    Under the leadership of our mentor <span class="font-bold text-gray-500">“ Dr Vijay Kimtata ” </span>We have successfully developed more than 2000 result oriented formulations for our clients & few of them are well renowned brands today like Mother Sparsh, Roop Mantra, Petsaffa,Dr Ortho.
                 </p>
             </div>
 
