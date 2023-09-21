@@ -17,118 +17,88 @@
                     </div>
 
                 </div>
-
-
-                <div class="w-full flex gap-4 lg:flex-row md:flex-row flex-col mt-10">
-                    <div class="lg:w-[50%] md:w-[50%] w-[100%] rounded-md">
-                        <div class=" bg-[#c9eecf] p-4 rounded-md">
-                            <div class="flex flex-col w-full mb-2">
-                                <span class="font-bold text-[20px] text-black">BILLING DETAILS</span>
-                            </div>
-
-                            <div class="flex w-full mb-2 gap-4 justify-between">
-                                <div class="w-[50%]">
-                                    <label class="text-gray-500 " for="firstName">First Name</label>
-                                    <input class="border-[1px] border-black text-[20px] p-2 rounded-sm w-full focus:outline-none focus:ring-0 " type="text" placeholder="First Name">
+                <div class="container mx-auto mt-8 p-8">
+                    <div class="flex lg:flex-row md:flex-row flex-col gap-4">
+                        <!-- Billing Address Form (Left Side) -->
+                        <div class="lg:w-2/3 md:w-2/3 w-full pr-8 border-[1px] border-[#437158] p-4 rounded-md">
+                            <h2 class="text-2xl font-semibold mb-4">Billing Address</h2>
+                            <form>
+                                <div class="w-full flex lg:flex-row md:flex-row sm:flex-row flex-col gap-4">
+                                    <div class="mb-4 lg:w-1/2 md:w-1/2 sm:w-1/2 w-full">
+                                        <label for="name" class="block text-gray-700 font-semibold mb-2">First Name</label>
+                                        <input type="text" id="name" name="name" class="w-full  px-4 py-2 border-[1px] border-[#437158] focus:border-[#437158] rounded-sm focus:outline-none focus:ring-0 " placeholder="First Name:" required>
+                                    </div>
+                                    <div class="mb-4 lg:w-1/2 md:w-1/2 sm:w-1/2 w-full">
+                                        <label for="name" class="block text-gray-700 font-semibold mb-2">Last Name</label>
+                                        <input type="text" id="name" name="name" class="w-full  px-4 py-2 border-[1px] border-[#437158] focus:border-[#437158] rounded-sm focus:outline-none focus:ring-0 " placeholder="Last Name:" required>
+                                    </div>
                                 </div>
-                                <div class="w-[50%]">
-                                    <label class="text-gray-500 " for="lastName">Last Name</label>
-                                    <input class="border-[1px] border-black text-[20px] p-2 rounded-sm w-full focus:outline-none focus:ring-0 " type="text" placeholder="Last Name">
+                                <div class="mb-4">
+                                    <label for="email" class="block text-gray-700 font-semibold mb-2">Country</label>
+                                    <select  id="email" name="email" class="w-full  px-4 py-2 border-[1px] border-[#437158] focus:border-[#437158] rounded-sm focus:outline-none focus:ring-0" placeholder="Your Email Address:" required>
+                                        <option class="rounded-sm" value="India">India</option>
+                                        <option class="rounded-sm" value="India">India</option>
+                                        <option class="rounded-sm" value="India">India</option>
+                                        <option class="rounded-sm" value="India">India</option>
+                                    </select>
                                 </div>
-                            </div>
-                            <div class="flex flex-col w-full mb-2" >
-                                <label class="text-gray-500 " for="firstName">Country</label>
-                                <select name="" id=""  class="border-[1px] border-black text-gray-400 text-[20px] p-2 focus:outline-none focus:ring-0 rounded-sm w-full">
-                                    <option class="text-gray-400" value="India">India</option>
-                                    <option class="text-gray-400">India</option>
-                                    <option class="text-gray-400">India</option>
-                                    <option class="text-gray-400">India</option>
-                                </select>
-                            </div>
-                            <div class="flex flex-col w-full mb-2">
-                                <label class="text-gray-500 " for="">Street Address</label>
-                                <input class="border-[1px] border-black text-[20px] p-2 rounded-sm w-full focus:outline-none focus:ring-0 " type="text" name="" id="" placeholder="House Number and street name">
-                            </div>
-                            <div class="flex flex-col w-full mb-2">
-                                <label class="text-gray-500 ">Town/City</label>
-                                <input class="border-[1px] border-black text-[20px] p-2 rounded-sm w-full focus:outline-none focus:ring-0 " type="text" name="" id="" placeholder="Town">
-                            </div>
-                            <div class="flex flex-col w-full mb-2">
-                                <label class="text-gray-500 " for="firstName">State</label>
-                                <select class="border-[1px] border-black text-[20px] p-2 text-gray-400 rounded-sm w-full focus:outline-none focus:ring-0" name="" id="">
-                                    <option class="text-gray-400">Himachal Pradesh</option>
-                                    <option class="text-gray-400">Himachal Pradesh</option>
-                                    <option class="text-gray-400">Himachal Pradesh</option>
-                                    <option class="text-gray-400">Himachal Pradesh</option>
-                                </select>
-                            </div>
-                            <div class="flex flex-col w-full mb-2">
-                                <label class="text-gray-500 " >Pin Code</label>
-                                <input class="border-[1px] border-black text-[20px] p-2 rounded-sm w-full focus:outline-none focus:ring-0 " type="Number" name="" id="" placeholder="100000">
-                            </div>
-                            <div class="flex flex-col w-full mb-2">
-                                <label  class="text-gray-500 ">Number</label>
-                                <input class="border-[1px] border-black text-[20px] p-2 rounded-sm w-full focus:outline-none focus:ring-0 " type="number " name="" id="" placeholder="+91 1234567890">
-                            </div>
-                            <div class="flex flex-col w-full mb-2">
-                                <label  class="text-gray-500 ">Email</label>
-                                <input class="border-[1px] border-black text-[20px] p-2 rounded-sm w-full focus:outline-none focus:ring-0 " type="email" name="" id="" placeholder="sample@gmail.com">
-                            </div>
+                                <div class="mb-4">
+                                    <label for="email" class="block text-gray-700 font-semibold mb-2">Street Address</label>
+                                    <input type="text" id="email" name="email" class="w-full  px-4 py-2 border-[1px] border-[#437158] focus:border-[#437158] rounded-sm focus:outline-none focus:ring-0" placeholder="Your Address:" required>
+                                </div>
+                                <div class="mb-4">
+                                    <label for="email" class="block text-gray-700 font-semibold mb-2">City</label>
+                                    <input type="text" id="email" name="email" class="w-full  px-4 py-2 border-[1px] border-[#437158] focus:border-[#437158] rounded-sm focus:outline-none focus:ring-0" placeholder="Your City:" required>
+                                </div>
+                                <div class="mb-4">
+                                    <label for="email" class="block text-gray-700 font-semibold mb-2">State</label>
+                                    <input type="text" id="email" name="email" class="w-full  px-4 py-2 border-[1px] border-[#437158] focus:border-[#437158] rounded-sm focus:outline-none focus:ring-0" placeholder="Your State:" required>
+                                </div>
+                                <div class="mb-4">
+                                    <label for="email" class="block text-gray-700 font-semibold mb-2">Pin Code</label>
+                                    <input type="number" id="email" name="email" class="w-full  px-4 py-2 border-[1px] border-[#437158] focus:border-[#437158] rounded-sm focus:outline-none focus:ring-0" placeholder="Zip Code:" required>
+                                </div>
+                                <div class="mb-4">
+                                    <label for="email" class="block text-gray-700 font-semibold mb-2">Email</label>
+                                    <input type="email" id="email" name="email" class="w-full  px-4 py-2 border-[1px] border-[#437158] focus:border-[#437158] rounded-sm focus:outline-none focus:ring-0" placeholder="Your Email Address:" required>
+                                </div>
+                                <div class="mb-4">
+                                    <label for="email" class="block text-gray-700 font-semibold mb-2">Phone</label>
+                                    <input type="email" id="email" name="email" class="w-full  px-4 py-2 border-[1px] border-[#437158] focus:border-[#437158] rounded-sm focus:outline-none focus:ring-0" placeholder="Your Phone Number" required>
+                                </div>
+                            </form>
                         </div>
 
-                    </div>
+                        <!-- Amount Details (Right Side) -->
+                        <div class="lg:w-1/3 md:w-1/3 w-full">
+                            <div class="bg-white shadow-lg shadow-[#437158] p-4 rounded-lg">
+                                <h2 class="text-2xl font-semibold mb-4">Amount Details</h2>
 
-                    <div class="lg:w-[50%] md:w-[50%] w-[100%] rounded-md ">
-                        <div class=" bg-[#c9eecf] p-4 rounded-md">
-                            <div class="flex justify-between font-bold text-[20px] text-[#2f6246] mb-6 border-b-[2px] border-b-[black]">
-                                <span class="font-bold text-[20px] text-black">YOUR ORDERS</span>
-                            </div>
-                            <div class="flex justify-between font-bold text-[18px] text-[#2f6246] mb-6 border-b-[2px] border-b-[black]">
-                                <span>PRODUCT</span>
-                                <span>SUB TOTAL</span>
-                            </div>
-                            <div class="flex flex-col font-bold text-[20px] text-[#2f6246] mb-6 border-b-[2px] border-b-[black] border-dotted">
-                                <div class="flex justify-between text-[16px] text-black">
-                                    <span>Vitamin A</span>
-                                    <span>₹2500</span>
+                                <div class="flex flex-col">
+                                    <div class="mb-2l mb-4">
+                                        <span class="font-semibold">Product Name:</span> Vitamin A<br>
+                                        <span class="font-semibold">Price:</span> ₹ 900.00
+                                    </div>
+                                    <div class="mb-2l">
+                                        <span class="font-semibold">Product Name:</span> Face Wash<br>
+                                        <span class="font-semibold">Price:</span> ₹ 1050.00
+                                    </div>
+
                                 </div>
-                                <div class="flex justify-between text-[16px] text-black">
-                                    <span>Vitamin A</span>
-                                    <span>₹2500</span>
+                                <!-- Add more details like quantity, subtotal, taxes, etc. -->
+                                <div class="mt-4">
+                                    <span class="text-lg font-semibold">Total:</span> ₹ 2000.00
                                 </div>
-                                <div class="flex justify-between text-[16px] text-black">
-                                    <span>Vitamin A</span>
-                                    <span>₹2500</span>
-                                </div>
-                                <div class="flex justify-between text-[16px] text-black">
-                                    <span>Vitamin A</span>
-                                    <span>₹2500</span>
+                                <div class="mt-10 flex justify-end">
+                                    <a href="#" >
+                                        <button class="bg-[#437158] border-[1px] border-[#437158] text-white hover:bg-white hover:text-[#437158] hover:border-[1px] hover:border-[#437158] transition ease-in duration-200 px-8 py-3 h-max my-auto text-sm font rounded-sm  font-bold w-max">Place Order</button>
+                                    </a>
                                 </div>
 
-
                             </div>
-
-                            <div class="flex justify-between font-bold text-[18px] text-[#2f6246] mb-6 border-b-[2px] border-b-[black]">
-                                <span>Sub Total</span>
-                                <span>₹2500</span>
-                            </div>
-                            <div class="flex justify-between font-bold text-[20px] text-[#2f6246] mb-6 border-b-[2px] border-b-[black]">
-                                <span>Shipping</span>
-                                <span>Free Shipping</span>
-                            </div>
-                            <div class="flex justify-between font-bold text-[20px] text-[#2f6246] mb-2">
-                                <span>Total:-</span>
-                                <span>₹2500</span>
-                            </div>
-                        </div>
-                        <div class="flex justify-end mt-2" >
-                            <a href="{{route('checkout')}}">
-                                <button class="bg-[#437158] border-[1px] border-[#437158] text-white hover:bg-white hover:text-[#437158] hover:border-[1px] hover:border-[#437158] transition ease-in duration-200 font-semibold px-8 py-3 rounded-sm text-sm" >Place Order</button>
-                            </a>
                         </div>
                     </div>
                 </div>
-
             </div>
     </div>
 

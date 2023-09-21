@@ -83,41 +83,47 @@
                 </div>
 
 
-                <div class="w-full mt-10 flex gap-4 lg:flex-row md:flex-row flex-col">
-                    <div class="lg:w-[50%] md:w-[50%] w-[100%] billingAddress bg-[#c9eecf]">
-                        <div class=" bg-[#c9eecf] p-4">
-                            <div class="font-bold text-[20px] text-black mb-2">
-                                <span class="text-[#707070] text-[16px]">Coupon Discount</span>
-                            </div>
-                            <div class="font-bold text-[20px] text-black mb-4">
-                                <input class="width-[200px] border-[1px] border-black rounded-sm py-2" type="text">
-                                <button class="bg-[#437158] border-[1px] border-[#437158] text-white hover:bg-white hover:text-[#437158] hover:border-[1px] hover:border-[#437158] transition ease-in duration-200 font-semibold px-4 py-3 rounded-sm text-xs ml-4" >Apply Coupon</button>
-                            </div>
+                <div class="container mx-auto mt-8 p-8">
+                    <div class="flex lg:flex-row md:flex-row flex-col gap-4">
+                        <!-- Billing Address Form (Left Side) -->
+                        <div class="lg:w-2/3 md:w-2/3 w-full pr-8 border-[1px] border-[#437158] p-4 rounded-md">
+                            <form>
+                                <div class="w-full flex lg:flex-row md:flex-row sm:flex-row flex-col gap-4">
+                                    <div class="mb-4 lg:w-1/2 md:w-1/2 sm:w-1/2 w-full">
+                                        <label for="name" class="block text-gray-700 font-semibold mb-2">Coupon Discount</label>
+                                        <input type="text" id="name" name="name" class="w-full  px-4 py-3 border-[1px] border-[#437158] focus:border-[#437158] rounded-sm focus:outline-none focus:ring-0 " placeholder="Coupon Code:" required>
+                                    </div>
+                                    <div class="mb-4 lg:w-1/2 md:w-1/2 sm:w-1/2 w-full flex flex-col">
+                                        <label for="name" class="block text-gray-700 font-semibold mb-2">&nbsp</label>
+
+                                        <a href="{{route('contact')}}" >
+                                            <button class="bg-[#437158] border-[1px] border-[#437158] text-white hover:bg-white hover:text-[#437158] hover:border-[1px] hover:border-[#437158] transition ease-in duration-200 px-8 py-3 h-max my-auto text-md font rounded-sm font-bold w-max">Apply Coupon</button>
+                                        </a>
+                                    </div>
+                                </div>
+                            </form>
                         </div>
 
-                    </div>
+                        <!-- Amount Details (Right Side) -->
+                        <div class="lg:w-1/3 md:w-1/3 w-full">
+                            <div class="bg-white shadow-lg shadow-[#437158] p-4 rounded-lg">
+                                <div class="flex flex-col">
+                                    <div class="mb-2l mb-4">
+                                        <span class="font-semibold">Sub Total:</span> ₹ 900.00<br>
+                                        <span class="font-semibold">Shipping:</span> Free
+                                    </div>
+                                </div>
+                                <!-- Add more details like quantity, subtotal, taxes, etc. -->
+                                <div class="mt-4">
+                                    <span class="text-lg font-semibold">Total:</span> ₹ 2000.00
+                                </div>
+                                <div class="mt-10 flex justify-end">
+                                    <a href="{{route('checkout')}}" >
+                                        <button class="bg-[#437158] border-[1px] border-[#437158] text-white hover:bg-white hover:text-[#437158] hover:border-[1px] hover:border-[#437158] transition ease-in duration-200 px-8 py-3 h-max my-auto text-sm font rounded-sm  font-bold w-max">Proceed To Checkout</button>
+                                    </a>
+                                </div>
 
-                    <div class="lg:w-[50%] md:w-[50%] w-[100%] checkoutBox bg-[#c9eecf]">
-                        <div class="bg-[#c9eecf] p-4">
-                            <div class="flex justify-between font-bold text-[20px] mb-2 text-[#2f6246]">
-                                <span>Subtotal:-</span>
-                                <span>₹2500</span>
                             </div>
-                            <div class="flex justify-between font-bold text-[20px] mb-2 text-[#2f6246] border-b-2px border-b-black pb-4">
-                                <span>Shipping:-</span>
-                                <span>Free</span>
-                            </div>
-
-                            <div class="flex justify-between font-bold text-[20px] mb-2 text-[#2f6246]">
-                                <span>Total:-</span>
-                                <span>₹2500</span>
-                            </div>
-                        </div>
-                        <div class="flex justify-end p-2">
-                            <a href="{{route('checkout')}}">
-                                <button class="bg-[#437158] border-[1px] border-[#437158] text-white hover:bg-white hover:text-[#437158] hover:border-[1px] hover:border-[#437158] transition ease-in duration-200 font-semibold px-4 py-3 rounded-sm text-xs" >Proceed to Checkout</button>
-
-                            </a>
                         </div>
                     </div>
                 </div>
