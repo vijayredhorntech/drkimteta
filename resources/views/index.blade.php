@@ -4,18 +4,19 @@
 {{--    banner--}}
     <div class="w-full flex lg:flex-row md:flex-row flex-col">
         <div class="lg:w-[65%] md:w-[65%] w-[100%]">
-            <div class="swiffy-slider slider-indicators-round">
+{{--            slider-nav-autoplay--}}
+            <div class="swiffy-slider slider-indicators-round ">
                 <ul class="slider-container ">
-                    <li><img class="w-full object-cover lg:h-[600px] md:h-[400px]  h-[400px]" src="{{asset('/assets/images/slider/1.jpg')}}"></li>
-                    <li><img class="w-full object-cover lg:h-[600px] md:h-[400px]  h-[400px]" src="{{asset('/assets/images/slider/2.jpg')}}"></li>
-                    <li><img class="w-full object-cover lg:h-[600px] md:h-[400px]  h-[400px]" src="{{asset('/assets/images/slider/3.jpg')}}"></li>
-                    <li><img class="w-full object-cover lg:h-[600px] md:h-[400px]  h-[400px]" src="{{asset('/assets/images/slider/4.jpg')}}"></li>
-                    <li><img class="w-full object-cover lg:h-[600px] md:h-[400px]  h-[400px]" src="{{asset('/assets/images/slider/5.jpg')}}"></li>
-                    <li><img class="w-full object-cover lg:h-[600px] md:h-[400px]  h-[400px]" src="{{asset('/assets/images/slider/6.jpg')}}"></li>
-                    <li><img class="w-full object-cover lg:h-[600px] md:h-[400px]  h-[400px]" src="{{asset('/assets/images/slider/7.jpg')}}"></li>
-                    <li><img class="w-full object-cover lg:h-[600px] md:h-[400px]  h-[400px]" src="{{asset('/assets/images/slider/8.jpg')}}"></li>
-                    <li><img class="w-full object-cover lg:h-[600px] md:h-[400px]  h-[400px]" src="{{asset('/assets/images/slider/9.jpg')}}"></li>
-                    <li><img class="w-full object-cover lg:h-[600px] md:h-[400px]  h-[400px]" src="{{asset('/assets/images/slider/10.jpg')}}"></li>
+                    <li><img class="w-full lg:h-[600px] md:h-[400px]  h-[400px]" src="{{asset('/assets/images/slider/slider1.png')}}"></li>
+                    <li><img class="w-full lg:h-[600px] md:h-[400px]  h-[400px]" src="{{asset('/assets/images/slider/2.jpg')}}"></li>
+                    <li><img class="w-full lg:h-[600px] md:h-[400px]  h-[400px]" src="{{asset('/assets/images/slider/3.jpg')}}"></li>
+                    <li><img class="w-full lg:h-[600px] md:h-[400px]  h-[400px]" src="{{asset('/assets/images/slider/4.jpg')}}"></li>
+                    <li><img class="w-full lg:h-[600px] md:h-[400px]  h-[400px]" src="{{asset('/assets/images/slider/5.jpg')}}"></li>
+                    <li><img class="w-full lg:h-[600px] md:h-[400px]  h-[400px]" src="{{asset('/assets/images/slider/6.jpg')}}"></li>
+                    <li><img class="w-full lg:h-[600px] md:h-[400px]  h-[400px]" src="{{asset('/assets/images/slider/7.jpg')}}"></li>
+                    <li><img class="w-full lg:h-[600px] md:h-[400px]  h-[400px]" src="{{asset('/assets/images/slider/8.jpg')}}"></li>
+                    <li><img class="w-full lg:h-[600px] md:h-[400px]  h-[400px]" src="{{asset('/assets/images/slider/9.jpg')}}"></li>
+                    <li><img class="w-full lg:h-[600px] md:h-[400px]  h-[400px]" src="{{asset('/assets/images/slider/10.jpg')}}"></li>
                 </ul>
 
 
@@ -60,28 +61,34 @@
             <div class="w-full flex">
                     <div class="w-[50%] lg:h-[300px] md:h-[200px] h-[200px] bg-[#fa971c] overflow-hidden flex ">
                         <div class="w-full h-full hover:h-[80%] hover:w-[80%] hover:m-auto flex hover:border-[2px] hover:border-white transition ease-in-out delay-150 duration-3000">
-                            <div class="m-auto text-center">
-                                <img class="mx-auto mb-4 h-12 w-12" src="{{asset('/assets/images/slider/icon1.png')}}" alt="">
-                                <span class="text-white lg:text-[16px] md:text-[12px] text-[16px] font-semibold">CONSULTANCY SERVICES</span>
-                            </div>
+                            <a class="m-auto text-center" href="{{route('services')}}">
+                                <div class="m-auto text-center">
+                                    <img class="mx-auto mb-4 h-12 w-12" src="{{asset('/assets/images/slider/icon1.png')}}" alt="">
+                                    <span class="text-white lg:text-[16px] md:text-[12px] text-[16px] font-semibold">CONSULTANCY SERVICES</span>
+                                </div>
+                            </a>
                         </div>
                     </div>
                     <div class="w-[50%] lg:h-[300px] md:h-[200px] h-[200px]  bg-[#437158] overflow-hidden flex">
                         <div class="w-full h-full hover:h-[80%] hover:w-[80%] hover:m-auto flex hover:border-[2px] hover:border-white transition ease-in-out delay-150 duration-3000">
-                            <div class="m-auto text-center">
-                                <img class="mx-auto mb-4 h-12 w-12" src="{{asset('/assets/images/slider/icon2.png')}}" alt="">
-                                <span class="text-white lg:text-[16px] md:text-[12px] text-[16px] font-semibold">CLINICAL TRIALS</span>
-                            </div>
+                            <a class="m-auto text-center" href="{{route('about')}}#clinicalTrial">
+                                <div class="m-auto text-center">
+                                    <img class="mx-auto mb-4 h-12 w-12" src="{{asset('/assets/images/slider/icon2.png')}}" alt="">
+                                    <span class="text-white lg:text-[16px] md:text-[12px] text-[16px] font-semibold">CLINICAL TRIALS</span>
+                                </div>
+                            </a>
                         </div>
                     </div>
                 </div>
             <div class="w-full flex">
                 <div class="w-[50%] lg:h-[300px] md:h-[200px] h-[200px] bg-[#437158] overflow-hidden flex ">
                     <div class="w-full h-full hover:h-[80%] hover:w-[80%] hover:m-auto flex hover:border-[2px] hover:border-white transition ease-in-out delay-150 duration-3000">
-                        <div class="m-auto text-center">
-                            <img class="mx-auto mb-4 h-12 w-12" src="{{asset('/assets/images/slider/icon3.png')}}" alt="">
-                            <span class="text-white lg:text-[16px] md:text-[12px] text-[16px] font-semibold">SHOP AT SWASTHYA</span>
-                        </div>
+                        <a class="m-auto text-center" href="{{route('shop')}}">
+                            <div class="m-auto text-center">
+                                <img class="mx-auto mb-4 h-12 w-12" src="{{asset('/assets/images/slider/icon3.png')}}" alt="">
+                                <span class="text-white lg:text-[16px] md:text-[12px] text-[16px] font-semibold">SHOP AT SWASTHYA</span>
+                            </div>
+                        </a>
                     </div>
                 </div>
                 <div class="w-[50%] lg:h-[300px] md:h-[200px] h-[200px] bg-[#fa971c] overflow-hidden flex  ">
@@ -144,107 +151,29 @@
     </div>
 
     <div class="xl:w-[70%] lg:w-[70%] md:w-[90%] w-[100%] mx-auto flex lg:flex-row md:flex-row flex-col gap-4 py-4 lg:px-8 md:px-6 ">
-        <div class="grid lg:grid-cols-4 md:grid-cols-4 grid-cols-2 gap-4 ">
-            <div class="w-full rounded-md p-2 border-[1px] border-gray-300 hover:z-10 hover:scale-110 transition ease-in-out delay-150">
-                  <img class="w-full h-full rounded-md" src="{{asset('/assets/images/home/puchkarma1.png')}}" alt="">
-              </div>
-            <div class="w-full rounded-md p-2 border-[1px] border-gray-300 hover:z-10 hover:scale-110 transition ease-in-out delay-150">
-                  <img class="w-full h-full rounded-md" src="{{asset('/assets/images/home/puchkarma2.png')}}" alt="">
-              </div>
-            <div class="w-full rounded-md p-2 border-[1px] border-gray-300 hover:z-10 hover:scale-110 transition ease-in-out delay-150">
-                <img class="w-full h-full rounded-md" src="{{asset('/assets/images/home/puchkarma3.png')}}" alt="">
-            </div>
-            <div class="w-full rounded-md p-2 border-[1px] border-gray-300 hover:z-10 hover:scale-110 transition ease-in-out delay-150">
-                <img class="w-full h-full rounded-md" src="{{asset('/assets/images/home/puchkarma4.png')}}" alt="">
-            </div>
-            <div class="w-full rounded-md p-2 border-[1px] border-gray-300 hover:z-10 hover:scale-110 transition ease-in-out delay-150">
-                <img class="w-full h-full rounded-md" src="{{asset('/assets/images/home/puchkarma5.png')}}" alt="">
-            </div>
-            <div class="w-full rounded-md p-2 border-[1px] border-gray-300 hover:z-10 hover:scale-110 transition ease-in-out delay-150">
-                <img class="w-full h-full rounded-md" src="{{asset('/assets/images/home/puchkarma6.png')}}" alt="">
-            </div>
-            <div class="w-full rounded-md p-2 border-[1px] border-gray-300 hover:z-10 hover:scale-110 transition ease-in-out delay-150">
-                <img class="w-full h-full rounded-md" src="{{asset('/assets/images/home/puchkarma7.png')}}" alt="">
-            </div>
-            <div class="w-full rounded-md p-2 border-[1px] border-gray-300 hover:z-10 hover:scale-110 transition ease-in-out delay-150">
-                <img class="w-full h-full rounded-md" src="{{asset('/assets/images/home/puchkarma8.png')}}" alt="">
+        <div class="swiffy-slider slider-item-show3 slider-nav-autoplay slider-indicators-round">
+            <ul class="slider-container">
+                <li class="flex"><img src="{{asset('/assets/images/home/puchkarma1.png')}}" class="mx-auto h-auto w-full rounded-md" ></li>
+                <li class="flex"><img src="{{asset('/assets/images/home/puchkarma2.png')}}" class="mx-auto h-auto w-full rounded-md"></li>
+                <li class="flex"><img src="{{asset('/assets/images/home/puchkarma3.png')}}" class="mx-auto h-auto w-full rounded-md"></li>
+                <li class="flex"><img src="{{asset('/assets/images/home/puchkarma4.png')}}" class="mx-auto h-auto w-full rounded-md"></li>
+                <li class="flex"><img src="{{asset('/assets/images/home/puchkarma5.png')}}" class="mx-auto h-auto w-full rounded-md"></li>
+                <li class="flex"><img src="{{asset('/assets/images/home/puchkarma6.png')}}" class="mx-auto h-auto w-full rounded-md"></li>
+            </ul>
+
+            <button type="button" class="slider-nav"></button>
+            <button type="button" class="slider-nav slider-nav-next"></button>
+
+            <div class="slider-indicators">
+                <button class="active"></button>
+                <button></button>
+                <button></button>
             </div>
         </div>
-
     </div>
 </div>
 
-   <div class="w-full h-max mt-4 px-2">
-    <div class="w-full py-2 flex justify-center">
-        <span class="font-['Amiri'] text-[40px] text-[#333] font-semibold">Gallery</span>
-    </div>
 
-    <div class="xl:w-[70%] lg:w-[70%] md:w-[90%] w-[100%] mx-auto flex lg:flex-row md:flex-row flex-col gap-4 py-4 lg:px-8 md:px-6 ">
-        <div class="grid lg:grid-cols-4 md:grid-cols-4 grid-cols-2 gap-4 ">
-            <div class="w-full rounded-md p-2 border-[1px] border-gray-300 hover:z-10 hover:scale-110 transition ease-in-out delay-150">
-                <img class="w-full h-full rounded-md" src="{{asset('/assets/images/gallery/g1.png')}}" alt="">
-            </div>
-            <div class="w-full rounded-md p-2 border-[1px] border-gray-300 hover:z-10 hover:scale-110 transition ease-in-out delay-150">
-                <img class="w-full h-full rounded-md" src="{{asset('/assets/images/gallery/g2.png')}}" alt="">
-            </div>
-            <div class="w-full rounded-md p-2 border-[1px] border-gray-300 hover:z-10 hover:scale-110 transition ease-in-out delay-150">
-                <img class="w-full h-full rounded-md" src="{{asset('/assets/images/gallery/g3.png')}}" alt="">
-            </div>
-            <div class="w-full rounded-md p-2 border-[1px] border-gray-300 hover:z-10 hover:scale-110 transition ease-in-out delay-150">
-                <img class="w-full h-full rounded-md" src="{{asset('/assets/images/gallery/g4.png')}}" alt="">
-            </div>
-            <div class="w-full rounded-md p-2 border-[1px] border-gray-300 hover:z-10 hover:scale-110 transition ease-in-out delay-150">
-                <img class="w-full h-full rounded-md" src="{{asset('/assets/images/gallery/g5.png')}}" alt="">
-            </div>
-            <div class="w-full rounded-md p-2 border-[1px] border-gray-300 hover:z-10 hover:scale-110 transition ease-in-out delay-150">
-                <img class="w-full h-full rounded-md" src="{{asset('/assets/images/gallery/g6.png')}}" alt="">
-            </div>
-            <div class="w-full rounded-md p-2 border-[1px] border-gray-300 hover:z-10 hover:scale-110 transition ease-in-out delay-150">
-                <img class="w-full h-full rounded-md" src="{{asset('/assets/images/gallery/g7.png')}}" alt="">
-            </div>
-            <div class="w-full rounded-md p-2 border-[1px] border-gray-300 hover:z-10 hover:scale-110 transition ease-in-out delay-150">
-                <img class="w-full h-full rounded-md" src="{{asset('/assets/images/gallery/g8.png')}}" alt="">
-            </div>
-            <div class="w-full rounded-md p-2 border-[1px] border-gray-300 hover:z-10 hover:scale-110 transition ease-in-out delay-150">
-                <img class="w-full h-full rounded-md" src="{{asset('/assets/images/gallery/g9.png')}}" alt="">
-            </div>
-            <div class="w-full rounded-md p-2 border-[1px] border-gray-300 hover:z-10 hover:scale-110 transition ease-in-out delay-150">
-                <img class="w-full h-full rounded-md" src="{{asset('/assets/images/gallery/g10.png')}}" alt="">
-            </div>
-            <div class="w-full rounded-md p-2 border-[1px] border-gray-300 hover:z-10 hover:scale-110 transition ease-in-out delay-150">
-                <img class="w-full h-full rounded-md" src="{{asset('/assets/images/gallery/g11.png')}}" alt="">
-            </div>
-            <div class="w-full rounded-md p-2 border-[1px] border-gray-300 hover:z-10 hover:scale-110 transition ease-in-out delay-150">
-                <img class="w-full h-full rounded-md" src="{{asset('/assets/images/gallery/g12.png')}}" alt="">
-            </div>
-            <div class="w-full rounded-md p-2 border-[1px] border-gray-300 hover:z-10 hover:scale-110 transition ease-in-out delay-150">
-                <img class="w-full h-full rounded-md" src="{{asset('/assets/images/gallery/g13.png')}}" alt="">
-            </div>
-            <div class="w-full rounded-md p-2 border-[1px] border-gray-300 hover:z-10 hover:scale-110 transition ease-in-out delay-150">
-                <img class="w-full h-full rounded-md" src="{{asset('/assets/images/gallery/g14.png')}}" alt="">
-            </div>
-            <div class="w-full rounded-md p-2 border-[1px] border-gray-300 hover:z-10 hover:scale-110 transition ease-in-out delay-150">
-                <img class="w-full h-full rounded-md" src="{{asset('/assets/images/gallery/g15.png')}}" alt="">
-            </div>
-            <div class="w-full rounded-md p-2 border-[1px] border-gray-300 hover:z-10 hover:scale-110 transition ease-in-out delay-150">
-                <img class="w-full h-full rounded-md" src="{{asset('/assets/images/gallery/g16.png')}}" alt="">
-            </div>
-            <div class="w-full rounded-md p-2 border-[1px] border-gray-300 hover:z-10 hover:scale-110 transition ease-in-out delay-150">
-                <img class="w-full h-full rounded-md" src="{{asset('/assets/images/gallery/g17.png')}}" alt="">
-            </div>
-            <div class="w-full rounded-md p-2 border-[1px] border-gray-300 hover:z-10 hover:scale-110 transition ease-in-out delay-150">
-                <img class="w-full h-full rounded-md" src="{{asset('/assets/images/gallery/g18.png')}}" alt="">
-            </div>
-            <div class="w-full rounded-md p-2 border-[1px] border-gray-300 hover:z-10 hover:scale-110 transition ease-in-out delay-150">
-                <img class="w-full h-full rounded-md" src="{{asset('/assets/images/gallery/g19.png')}}" alt="">
-            </div>
-            <div class="w-full rounded-md p-2 border-[1px] border-gray-300 hover:z-10 hover:scale-110 transition ease-in-out delay-150">
-                <img class="w-full h-full rounded-md" src="{{asset('/assets/images/gallery/g20.png')}}" alt="">
-            </div>
-        </div>
-
-    </div>
-</div>
 
     <div class="w-full">
         <div class="w-full text-right bg-[url({{asset('/assets/images/home/banner.jpg')}})] p-6 bg-center bg-cover flex lg:flex-row md:flex-row flex-col-reverse justify-end ">

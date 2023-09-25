@@ -1,8 +1,8 @@
 <div class="w-full flex border-b-[1px] border-b-gray-200  relative sticky top-0 z-50 bg-white">
     <div class="xl:w-[80%] w-[100%] mx-auto h-28 flex justify-between py-4 lg:px-8 md:px-6 px-2 ">
-        <div class=" h-16 w-max flex border-[1px] my-auto  border-[#437158]">
+        <div class=" h-16 w-max flex my-auto">
             <a href="{{route('home')}}">
-                <img class="h-full w-20 rounded-lg" src="{{asset('/assets/images/logo/logo (2).png')}}" alt="">
+                <img class="h-full w-32" src="{{asset('/assets/images/logo/logo.png')}}" alt="">
             </a>
         </div>
 

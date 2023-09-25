@@ -9,13 +9,11 @@
 
 
     <div class="w-full flex px-2 mb-4 mt-4">
-            <!-- bootstrap image gallery 1 -->
             <div class="w-full lg:w-[70%] w-[100%] mx-auto">
                 <div class="w-full">
                     <div class="w-full flex justify-center mb-8">
                         <span class="font-bold text-black text-[25px]">CHECKOUT</span>
                     </div>
-
                 </div>
                 <div class="container mx-auto mt-8 p-8">
                     <div class="flex lg:flex-row md:flex-row flex-col gap-4">

@@ -12,8 +12,15 @@
 
 
     <div class="max-w-7xl mx-auto px-4 mt-6 text-center">
-        <h1 class="text-2xl text-[#437158] font-semibold mb-4">List of Our Clients</h1>
-        <div class="grid sm:grid-cols-2 grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8 mt-12 mb-6">x
+        <span
+            class="font-['Amiri'] lg:text-[40px] md:text-[40px] sm:text-[40px] text-[30px] text-[#2f6246] font-semibold">List of Our Clients</span>
+        <div class="grid sm:grid-cols-2 grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8 mt-12 mb-6">
+            <div class="bg-white shadow-lg shadow-[#437158] rounded-lg overflow-hidden">
+                <img src="{{asset('/assets/images/clients/ayush.jpg')}}" alt="Client 1" class="w-full h-52 ">
+                <div class="p-4">
+                    <h2 class="text-xl font-semibold mb-2">Ayush Herbal and Health care</h2>
+                </div>
+            </div>
             <div class="bg-white shadow-lg shadow-[#437158] rounded-lg overflow-hidden">
                 <img src="{{asset('/assets/images/clients/divisha.png')}}" alt="Client 1" class="w-full h-52 ">
                 <div class="p-4">
@@ -75,12 +82,6 @@
                 </div>
             </div>
             <div class="bg-white shadow-lg shadow-[#437158] rounded-lg overflow-hidden">
-                <img src="{{asset('/assets/images/clients/ayush.jpeg')}}" alt="Client 1" class="w-full h-52 ">
-                <div class="p-4">
-                    <h2 class="text-xl font-semibold mb-2">Ayush Herbal & Health Care</h2>
-                </div>
-            </div>
-            <div class="bg-white shadow-lg shadow-[#437158] rounded-lg overflow-hidden">
                 <img src="{{asset('/assets/images/clients/dr.png')}}" alt="Client 1" class="w-full h-52 ">
                 <div class="p-4">
                     <h2 class="text-xl font-semibold mb-2">Dr Sabharwal Wound Care Unit</h2>
@@ -126,6 +127,116 @@
                 <img src="{{asset('/assets/images/clients/ro.jpeg')}}" alt="Client 1" class="w-full h-52 ">
                 <div class="p-4">
                     <h2 class="text-xl font-semibold mb-2">Roseate Pharma</h2>
+                </div>
+            </div>
+            <div class="bg-white shadow-lg shadow-[#437158] rounded-lg overflow-hidden">
+                <img src="{{asset('/assets/images/clients/asli.png')}}" alt="Client 1" class="w-full h-52 ">
+                <div class="p-4">
+                    <h2 class="text-xl font-semibold mb-2">Asli Ayurveda</h2>
+                </div>
+            </div>
+            <div class="bg-white shadow-lg shadow-[#437158] rounded-lg overflow-hidden">
+                <img src="{{asset('/assets/images/clients/nano.jpg')}}" alt="Client 1" class="w-full h-52 ">
+                <div class="p-4">
+                    <h2 class="text-xl font-semibold mb-2">Nano Labs</h2>
+                </div>
+            </div>
+            <div class="bg-white shadow-lg shadow-[#437158] rounded-lg overflow-hidden">
+                <img src="{{asset('/assets/images/clients/saisa.jpeg')}}" alt="Client 1" class="w-full h-52 ">
+                <div class="p-4">
+                    <h2 class="text-xl font-semibold mb-2">Saisa </h2>
+                </div>
+            </div>
+            <div class="bg-white shadow-lg shadow-[#437158] rounded-lg overflow-hidden">
+                <img src="{{asset('/assets/images/clients/kam.jpeg')}}" alt="Client 1" class="w-full h-52 ">
+                <div class="p-4">
+                    <h2 class="text-xl font-semibold mb-2">Kamdhenu Healthcare Nalagarh
+                    </h2>
+                </div>
+            </div>
+            <div class="bg-white shadow-lg shadow-[#437158] rounded-lg overflow-hidden">
+                <img src="{{asset('/assets/images/clients/im.jpg')}}" alt="Client 1" class="w-full h-52 ">
+                <div class="p-4">
+                    <h2 class="text-xl font-semibold mb-2"> IM Healthcare</h2>
+                </div>
+            </div>
+            <div class="bg-white shadow-lg shadow-[#437158] rounded-lg overflow-hidden">
+                <img src="{{asset('/assets/images/clients/as.jpeg')}}" alt="Client 1" class="w-full h-52 ">
+                <div class="p-4">
+                    <h2 class="text-xl font-semibold mb-2"> Astonia Pharma
+                    </h2>
+                </div>
+            </div>
+            <div class="bg-white shadow-lg shadow-[#437158] rounded-lg overflow-hidden">
+                <img src="{{asset('/assets/images/clients/pch.jpeg')}}" alt="Client 1" class="w-full h-52 ">
+                <div class="p-4">
+                    <h2 class="text-xl font-semibold mb-2">  Psychocare</h2>
+                </div>
+            </div>
+            <div class="bg-white shadow-lg shadow-[#437158] rounded-lg overflow-hidden">
+                <img src="{{asset('/assets/images/clients/zy.jpg')}}" alt="Client 1" class="w-full h-52 ">
+                <div class="p-4">
+                    <h2 class="text-xl font-semibold mb-2"> Zydus</h2>
+                </div>
+            </div>
+            <div class="bg-white shadow-lg shadow-[#437158] rounded-lg overflow-hidden">
+                <img src="{{asset('/assets/images/clients/max.png')}}" alt="Client 1" class="w-full h-52 ">
+                <div class="p-4">
+                    <h2 class="text-xl font-semibold mb-2"> Maxnova</h2>
+                </div>
+            </div>
+            <div class="bg-white shadow-lg shadow-[#437158] rounded-lg overflow-hidden">
+                <img src="{{asset('/assets/images/clients/br.jpeg')}}" alt="Client 1" class="w-full h-52 ">
+                <div class="p-4">
+                    <h2 class="text-xl font-semibold mb-2"> Bhrahm Herbals</h2>
+                </div>
+            </div>
+            <div class="bg-white shadow-lg shadow-[#437158] rounded-lg overflow-hidden">
+                <img src="{{asset('/assets/images/clients/ban.png')}}" alt="Client 1" class="w-full h-52 ">
+                <div class="p-4">
+                    <h2 class="text-xl font-semibold mb-2">BAN Labs Pvt Ltd</h2>
+                </div>
+            </div>
+            <div class="bg-white shadow-lg shadow-[#437158] rounded-lg overflow-hidden">
+                <img src="{{asset('/assets/images/clients/bio.jpg')}}" alt="Client 1" class="w-full h-52 ">
+                <div class="p-4">
+                    <h2 class="text-xl font-semibold mb-2">Biotique</h2>
+                </div>
+            </div>
+            <div class="bg-white shadow-lg shadow-[#437158] rounded-lg overflow-hidden">
+                <img src="{{asset('/assets/images/clients/nid.jpeg')}}" alt="Client 1" class="w-full h-52 ">
+                <div class="p-4">
+                    <h2 class="text-xl font-semibold mb-2">North India Pharma</h2>
+                </div>
+            </div>
+            <div class="bg-white shadow-lg shadow-[#437158] rounded-lg overflow-hidden">
+                <img src="{{asset('/assets/images/clients/amb.png')}}" alt="Client 1" class="w-full h-52 ">
+                <div class="p-4">
+                    <h2 class="text-xl font-semibold mb-2">Ambic Ayurved</h2>
+                </div>
+            </div>
+            <div class="bg-white shadow-lg shadow-[#437158] rounded-lg overflow-hidden">
+                <img src="{{asset('/assets/images/clients/zen.png')}}" alt="Client 1" class="w-full h-52 ">
+                <div class="p-4">
+                    <h2 class="text-xl font-semibold mb-2">Zenhil healthcare</h2>
+                </div>
+            </div>
+            <div class="bg-white shadow-lg shadow-[#437158] rounded-lg overflow-hidden">
+                <img src="{{asset('/assets/images/clients/dan.jpeg')}}" alt="Client 1" class="w-full h-52 ">
+                <div class="p-4">
+                    <h2 class="text-xl font-semibold mb-2">Dhanvantri Organics</h2>
+                </div>
+            </div>
+            <div class="bg-white shadow-lg shadow-[#437158] rounded-lg overflow-hidden">
+                <img src="{{asset('/assets/images/clients/imc.jpeg')}}" alt="Client 1" class="w-full h-52 ">
+                <div class="p-4">
+                    <h2 class="text-xl font-semibold mb-2">IMC Ludhiana</h2>
+                </div>
+            </div>
+            <div class="bg-white shadow-lg shadow-[#437158] rounded-lg overflow-hidden">
+                <img src="{{asset('/assets/images/clients/ihc.jpeg')}}" alt="Client 1" class="w-full h-52 ">
+                <div class="p-4">
+                    <h2 class="text-xl font-semibold mb-2">IHC Haridwar</h2>
                 </div>
             </div>
         </div>

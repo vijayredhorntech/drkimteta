@@ -21,11 +21,14 @@
                     Under the leadership of our mentor <span class="font-bold text-gray-500">“ Dr Vijay Kimtata ” </span>We have successfully developed more than 2000 result oriented formulations for our clients & few of them are well renowned brands today like Mother Sparsh, Roop Mantra, Petsaffa,Dr Ortho.
                 </p>
             </div>
-
-
         </div>
     </div>
 
+    <div class="w-full flex ">
+        <div class="xl:w-[70%] lg:w-[70%] md:w-[90%] w-[100%] mx-auto flex lg:flex-row-reverse md:flex-row-reverse flex-col-reverse gap-4 py-12 lg:px-8 md:px-6 ">
+        <img class="w-full h-full" src="{{asset('assets/images/home/banner2.jpg')}}" alt="">
+        </div>
+    </div>
 
     <div  class="w-full h-max mt-6 px-2">
         <div class="xl:w-[70%] lg:w-[70%] md:w-[90%] w-[100%] mx-auto flex lg:flex-row-reverse md:flex-row-reverse flex-col-reverse gap-4 py-4 lg:px-8 md:px-6 ">
@@ -63,7 +66,6 @@
         </div>
     </div>
 
-
     <div class="w-full mt-2 mb-8">
         <div class="w-full py-8 text-right bg-[#2f6246] p-6 bg-center bg-cover flex flex-col  ">
             <span class="font-['Amiri'] text-[30px] text-white mx-auto font-normal mt-2">Our Missions</span>
@@ -72,9 +74,5 @@
             </p>
         </div>
     </div>
-
-
-
-
 
 @endsection
