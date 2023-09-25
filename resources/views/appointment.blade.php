@@ -1,7 +1,4 @@
-@seoTitle('Appointment')
-@extends('layouts.layout')
-
-@section('content')
+<x-frontend-layout>
 
     <div class="w-full">
         <div
@@ -73,5 +70,4 @@
             </div>
         </div>
     </div>
-
-@endsection
+</x-frontend-layout>

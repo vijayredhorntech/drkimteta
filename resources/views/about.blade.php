@@ -1,6 +1,4 @@
-@extends('layouts.layout')
-
-@section('content')
+<x-frontend-layout>
 
     <div class="w-full">
         <div class="w-full h-[50vh] text-right bg-[url({{asset('/assets/images/about/about-bg.jpg')}})] p-6 bg-center bg-cover flex lg:flex-row md:flex-row flex-col-reverse justify-end ">
@@ -26,7 +24,7 @@
 
     <div class="w-full flex ">
         <div class="xl:w-[70%] lg:w-[70%] md:w-[90%] w-[100%] mx-auto flex lg:flex-row-reverse md:flex-row-reverse flex-col-reverse gap-4 py-12 lg:px-8 md:px-6 ">
-        <img class="w-full h-full" src="{{asset('assets/images/home/banner2.jpg')}}" alt="">
+            <img class="w-full h-full" src="{{asset('assets/images/home/banner2.jpg')}}" alt="">
         </div>
     </div>
 
@@ -34,11 +32,11 @@
         <div class="xl:w-[70%] lg:w-[70%] md:w-[90%] w-[100%] mx-auto flex lg:flex-row-reverse md:flex-row-reverse flex-col-reverse gap-4 py-4 lg:px-8 md:px-6 ">
             <div class="h-max bg:w-[50%] md:w-[50%] w-[100%] flex-col px-2 pl-4 ">
                 <h1 class="font-['Amiri'] text-[30px] text-gray-500 font-normal mt-2">Clinical Trials conducted under Supervision of Dr. Vijay</h1>
-                    <h6 class="font-['Amiri'] text-[18px] font-normal text-[#437158] mt-2">
-                        Clinical Trial Conducted by DCGI approved Ethical committee
-                        CTRI Website URL - <a class="italic text-blue-500" href="http://ctri.nic.in" target="_blank">http://ctri.nic.in</a>
+                <h6 class="font-['Amiri'] text-[18px] font-normal text-[#437158] mt-2">
+                    Clinical Trial Conducted by DCGI approved Ethical committee
+                    CTRI Website URL - <a class="italic text-blue-500" href="http://ctri.nic.in" target="_blank">http://ctri.nic.in</a>
 
-                    </h6>
+                </h6>
 
                 <ul class="text-[#888] list-disc text-[18px] font-normal text-justify mt-4">
                     <li class="text-[20px] text-[#437158] font-bold">
@@ -75,4 +73,4 @@
         </div>
     </div>
 
-@endsection
+</x-frontend-layout>

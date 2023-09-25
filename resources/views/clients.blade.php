@@ -1,12 +1,9 @@
-@extends('layouts.layout')
-
-@section('content')
-
+<x-frontend-layout>
     <div class="w-full">
         <div class=" relative w-full h-[50vh] text-right bg-[url({{asset('/assets/images/clients/banner.jpg')}})] p-6 bg-center bg-cover flex lg:flex-row md:flex-row flex-col-reverse justify-end ">
-             <div class="absolute top-0 left-0 w-full h-full bg-black/25">
+            <div class="absolute top-0 left-0 w-full h-full bg-black/25">
 
-             </div>
+            </div>
         </div>
     </div>
 
@@ -241,11 +238,4 @@
             </div>
         </div>
     </div>
-
-
-
-
-
-
-
-@endsection
+</x-frontend-layout>

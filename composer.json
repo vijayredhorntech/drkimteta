@@ -40,7 +40,8 @@
             "app/Helpers/Countries.php",
             "app/Helpers/MainHelper.php",
             "app/Helpers/SettingsHelper.php",
-            "app/Helpers/UserSystemInfoHelper.php"
+            "app/Helpers/UserSystemInfoHelper.php",
+            "app/Helpers/Common.php"
         ]
     },
     "autoload-dev": {

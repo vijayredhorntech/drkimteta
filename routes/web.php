@@ -54,18 +54,18 @@ Route::middleware(['splade'])->group(function () {
         Route::get('/register', [RegisteredUserController::class, 'create'])->name('register');
         Route::post('/register', [RegisteredUserController::class, 'store']);
     });
+//
+//    Route::get('/', function () {
+//        return view('welcome', [
+//            'canLogin' => Route::has('login'),
+//            'canRegister' => Route::has('register'),
+//            'laravelVersion' => Application::VERSION,
+//            'phpVersion' => PHP_VERSION,
+//        ]);
+//    });
+
 
     Route::get('/', function () {
-        return view('welcome', [
-            'canLogin' => Route::has('login'),
-            'canRegister' => Route::has('register'),
-            'laravelVersion' => Application::VERSION,
-            'phpVersion' => PHP_VERSION,
-        ]);
-    });
-
-
-    Route::get('/index', function () {
         return view('index');
     })->name('home');
     Route::get('/about', function () {

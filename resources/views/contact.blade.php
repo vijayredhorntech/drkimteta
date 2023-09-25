@@ -1,7 +1,4 @@
-@extends('layouts.layout')
-
-@section('content')
-
+<x-frontend-layout>
     <div class="w-full">
         <div class="w-full h-[50vh] text-right bg-[url({{asset('/assets/images/about/about-bg.jpg')}})] p-6 bg-center bg-cover flex lg:flex-row md:flex-row flex-col-reverse justify-end ">
         </div>
@@ -45,7 +42,4 @@
     </div>
 
 
-
-
-
-@endsection
+</x-frontend-layout>
