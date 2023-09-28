@@ -17,15 +17,15 @@ class SettingsSeeder extends Seeder
             # General
             [
                 'key' => 'website_name',
-                'value' => 'SpladePanel',
+                'value' => 'Dr Kimteta',
             ],
             [
                 'key' => 'website_url',
-                'value' => 'https://name.com',
+                'value' => 'https://drkimteta.com',
             ],
             [
                 'key' => 'website_email_address',
-                'value' => 'support@spladepanel.com',
+                'value' => 'support@drkimteta.com',
             ],
             [
                 'key' => 'user_registration',
@@ -51,11 +51,11 @@ class SettingsSeeder extends Seeder
             # SEO Configuration
             [
                 'key' => 'seo_title',
-                'value' => 'SpladePanel',
+                'value' => 'Dr. Kimteta',
             ],
             [
                 'key' => 'seo_author',
-                'value' => 'Abdelmjid Saber',
+                'value' => 'Him Soft Solution',
             ],
             [
                 'key' => 'seo_keywords',

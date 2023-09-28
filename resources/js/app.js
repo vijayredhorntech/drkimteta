@@ -7,7 +7,7 @@ import { renderSpladeApp, SpladePlugin } from "@protonemedia/laravel-splade";
 import "@protonemedia/laravel-splade/dist/jodit.css";
 import "../../public/assets/js/toggle-dark-mode";
 import { swiffyslider } from 'swiffy-slider'
-// import "./extra.js";
+import {defineAsyncComponent} from "vue";
 
 const el = document.getElementById("app");
 // import Swiffy Slider JS
@@ -23,6 +23,7 @@ createApp({
     .use(SpladePlugin, {
         "max_keep_alive": 10,
         "transform_anchors": true,
-        "progress_bar": true
+        "progress_bar": true,
     })
+    .component("ProductDetails", defineAsyncComponent(() => import("./components/ProductDetails.vue")))
     .mount(el);

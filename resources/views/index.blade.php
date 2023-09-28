@@ -172,7 +172,8 @@
 
 
     <div class="w-full">
-        <div class="w-full text-right bg-[url({{asset('/assets/images/home/banner.jpg')}})] p-6 bg-center bg-cover flex lg:flex-row md:flex-row flex-col-reverse justify-end ">
+        <div class="w-full text-right p-6 flex lg:flex-row md:flex-row flex-col-reverse justify-end "
+          style="background: url('{{asset('/assets/images/home/banner.jpg')}}'); background-repeat: no-repeat; background-position: center; background-size:cover;">
             <div class="lg:w-1/2 md:w-1/2 w-full">
 
             </div>

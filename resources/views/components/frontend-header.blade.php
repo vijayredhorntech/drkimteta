@@ -11,7 +11,7 @@
                 <a href="{{route('home')}}" class="my-auto {{ isActiveRoute('home') }}  hover:text-[#437158] hover:border-b-[2px] hover:border-b-[#437158] transition ease-in duration-200 "> <li>HOME</li></a>
                 <a href="{{route('about')}}" class="my-auto {{ isActiveRoute('about') }} hover:text-[#437158] hover:border-b-[2px] hover:border-b-[#437158] transition ease-in duration-200  "> <li>ABOUT</li></a>
                 <a href="{{route('shop')}}" class="my-auto {{ isActiveRoute('shop') }} hover:text-[#437158] hover:border-b-[2px] hover:border-b-[#437158] transition ease-in duration-200  "> <li>SHOP</li></a>
-                <a href="{{route('appointment')}}" class="my-auto{{ isActiveRoute('appointment') }}  hover:text-[#437158] hover:border-b-[2px] hover:border-b-[#437158] transition ease-in duration-200  "> <li>APPOINTMENT</li></a>
+                <a href="{{route('appointment')}}" class="my-auto {{ isActiveRoute('appointment') }}  hover:text-[#437158] hover:border-b-[2px] hover:border-b-[#437158] transition ease-in duration-200  "> <li>APPOINTMENT</li></a>
                 <a href="{{route('gallery')}}" class="my-auto {{ isActiveRoute('gallery') }} hover:text-[#437158] hover:border-b-[2px] hover:border-b-[#437158] transition ease-in duration-200  "> <li>GALLERY</li></a>
                 <div class="w-max h-full flex relative cursor-pointer" id="service" onmouseover="const serviceList = document.getElementById('serviceList'); serviceList.classList.remove('hidden')" onmouseleave=" const serviceList = document.getElementById('serviceList');serviceList.classList.add('hidden');">
                     <span class="my-auto hover:text-[#437158] hover:border-b-[2px] hover:border-b-[#437158] transition ease-in duration-200  "><li class="relative">SERVICE <i class="fa-solid fa-caret-down ml-1"></i></li></span>
@@ -49,12 +49,12 @@
             <a href="{{route('user')}}" class="my-auto">
                 <button class="bg-[#437158] border-[1px] border-[#437158] text-white hover:bg-white hover:text-[#437158] hover:border-[1px] hover:border-[#437158] transition ease-in duration-200 px-4 py-3  h-max my-auto text-sm  rounded-full font-bold w-max"> <i class="fa fa-user"></i> </button>
             </a>
-            <a href="{{route('cart')}}" class="my-auto">
+            <Link href="{{route('cart')}}" class="my-auto">
                 <button class="bg-[#437158] border-[1px] border-[#437158] text-white hover:bg-white hover:text-[#437158] hover:border-[1px] hover:border-[#437158] transition ease-in duration-200 px-4 py-3 ml-2  h-max my-auto text-sm  rounded-full font-bold w-max"> <i class="fa fa-shopping-cart"></i> </button>
-            </a>
-            <a href="{{route('wishlist')}}" class="my-auto">
-                <button class="bg-[#437158] border-[1px] border-[#437158] text-white hover:bg-white hover:text-[#437158] hover:border-[1px] hover:border-[#437158] transition ease-in duration-200 px-4 py-3 ml-2  h-max my-auto text-sm  rounded-full font-bold w-max"> <i class="fa fa-heart"></i> </button>
-            </a>
+            </Link>
+{{--            <a href="{{route('wishlist')}}" class="my-auto">--}}
+{{--                <button class="bg-[#437158] border-[1px] border-[#437158] text-white hover:bg-white hover:text-[#437158] hover:border-[1px] hover:border-[#437158] transition ease-in duration-200 px-4 py-3 ml-2  h-max my-auto text-sm  rounded-full font-bold w-max"> <i class="fa fa-heart"></i> </button>--}}
+{{--            </a>--}}
             <a href="{{route('contact')}}" class="my-auto lg:block  hidden">
                 <button class="bg-[#437158] border-[1px] border-[#437158] text-white hover:bg-white hover:text-[#437158] hover:border-[1px] hover:border-[#437158] transition ease-in duration-200 px-8 py-3 ml-2 h-max my-auto text-sm font rounded-sm  font-bold w-max">CONTACT US</button>
             </a>

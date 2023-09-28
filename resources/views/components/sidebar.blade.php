@@ -16,12 +16,17 @@
             </Link>
 
             <Link href="{{ route('dashboard.appointment.home') }}" class="{{ request()->routeIs('dashboard.appointment.home') ? 'bg-indigo-50 dark:bg-indigo-400 text-gray-700 dark:text-white font-semibold' : '' }} text-sm py-3 my-0 mx-2 flex items-center whitespace-nowrap px-4 font-medium text-gray-500 dark:text-white hover:bg-indigo-50 dark:hover:bg-indigo-400 rounded-lg shadow-none transition-colors ease-in-out">
-                <i class="fa-solid fa-house"></i>
+                <i class="fa-solid fa-calendar"></i>
                 <span class="mx-2 text-sm">Appointments</span>
             </Link>
 
+            <Link href="{{ route('dashboard.category.home') }}" class="{{ request()->routeIs('dashboard.category.home') ? 'bg-indigo-50 dark:bg-indigo-400 text-gray-700 dark:text-white font-semibold' : '' }} text-sm py-3 my-0 mx-2 flex items-center whitespace-nowrap px-4 font-medium text-gray-500 dark:text-white hover:bg-indigo-50 dark:hover:bg-indigo-400 rounded-lg shadow-none transition-colors ease-in-out">
+                <i class="fa-solid fa-list"></i>
+                <span class="mx-2 text-sm">Categories</span>
+            </Link>
+
             <Link href="{{ route('dashboard.product.home') }}" class="{{ request()->routeIs('dashboard.product.home') ? 'bg-indigo-50 dark:bg-indigo-400 text-gray-700 dark:text-white font-semibold' : '' }} text-sm py-3 my-0 mx-2 flex items-center whitespace-nowrap px-4 font-medium text-gray-500 dark:text-white hover:bg-indigo-50 dark:hover:bg-indigo-400 rounded-lg shadow-none transition-colors ease-in-out">
-                <i class="fa-solid fa-house"></i>
+                <i class="fa-solid fa-boxes-packing"></i>
                 <span class="mx-2 text-sm">Products</span>
             </Link>
 

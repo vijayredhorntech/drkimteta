@@ -1,6 +1,8 @@
 <?php
 
 use App\Http\Controllers\AppointmentController;
+use App\Http\Controllers\CartController;
+use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\Dashboard\DashboardController;
 use App\Http\Controllers\Dashboard\LanguageController;
 use App\Http\Controllers\Dashboard\PermissionController;
@@ -10,6 +12,7 @@ use App\Http\Controllers\Dashboard\SettingController;
 use App\Http\Controllers\Dashboard\UserController;
 use App\Http\Controllers\Dashboard\TrafficsController;
 use App\Http\Controllers\ProductController;
+use App\Http\Controllers\ShopController;
 use App\Models\Language;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
@@ -83,21 +86,14 @@ Route::middleware(['splade'])->group(function () {
     Route::get('/contact', function () {
         return view('contact');
     })->name('contact');
-    Route::get('/shop', function () {
-        return view('shop');
-    })->name('shop');
     Route::get('/productDetails', function () {
         return view('productDetails');
     })->name('productDetails');
-    Route::get('/cart', function () {
-        return view('cart');
-    })->name('cart');
+
     Route::get('/wishlist', function () {
         return view('wishlist');
     })->name('wishlist');
-    Route::get('/checkout', function () {
-        return view('checkout');
-    })->name('checkout');
+
 
     Route::get('/user', function () {
         return view('user');
@@ -106,6 +102,20 @@ Route::middleware(['splade'])->group(function () {
         return view('clients');
     })->name('clients');
 
+
+
+    Route::get('/sample', function () {
+        return view('sample');
+    })->name('sample');
+
+
+    Route::get('/shop/{selectedCategory:slug?}', [ShopController::class,'index'])->name('shop');
+    Route::get('/shop/product-details/{product:slug}', [ShopController::class,'show'])->name('product-details');
+
+    Route::get('/cart', [CartController::class, 'index'])->name('cart');
+    Route::get('/cart/add/{product:slug}', [CartController::class, 'store'])->name('cart.add');
+    Route::post('/cart/update/{product:slug}/quantity', [CartController::class, 'update'])->name('cart.update');
+    Route::get('/cart/checkout', [CartController::class,'checkout'])->name('checkout');
 
     Route::prefix('dashboard')->middleware(['auth:sanctum', config('jetstream.auth_session'), 'verified'])->name('dashboard.')->group(function () {
         Route::get('/', [DashboardController::class, 'index'])->name('index');
@@ -144,6 +154,16 @@ Route::middleware(['splade'])->group(function () {
             Route::post('/{product}/update',[ProductController::class,'update'])->name('update');
             Route::delete('/{product}/delete',[ProductController::class,'delete'])->name('delete');
         });
+
+        Route::prefix('category')->name('category.')->group(function(){
+            Route::get('/',[CategoryController::class,'index'])->name('home');
+            Route::get('/create',[CategoryController::class,'create'])->name('create');
+            Route::post('/store',[CategoryController::class,'store'])->name('store');
+            Route::get('/{category}/edit',[CategoryController::class,'edit'])->name('edit');
+            Route::post('/{category}/update',[CategoryController::class,'update'])->name('update');
+            Route::delete('/{category}/delete',[CategoryController::class,'destroy'])->name('delete');
+        });
+
 
     });
 });

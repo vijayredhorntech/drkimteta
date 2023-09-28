@@ -2,8 +2,11 @@
 
     <div class="w-full">
         <div
-            class="w-full h-[50vh] text-right bg-[url({{asset('/assets/images/appointment/appointment.png')}})] p-6 bg-center bg-cover flex lg:flex-row md:flex-row flex-col-reverse justify-end ">
-        </div>
+    class="w-full h-[50vh] text-right flex lg:flex-row md:flex-row flex-col-reverse justify-end "
+    style="background: url('{{ asset('/assets/images/appointment/appointment.png') }}'); background-repeat: no-repeat; background-position: center; background-size:cover;">
+</div>
+        
+      
     </div>
     <div class="w-full mt-2 mb-8">
         <div class="w-full py-8 text-right bg-[#2f6246] p-6 bg-center bg-cover flex flex-col  ">
@@ -18,7 +21,8 @@
 
     <div class="w-full">
         <div
-            class="w-full text-right bg-[url({{asset('/assets/images/appointment/delicate-branch-black.jpg')}})]  py-20 bg-center bg-cover flex flex-col ">
+            class="w-full text-right  py-20 flex flex-col"
+            style="background: url('{{asset('/assets/images/appointment/delicate-branch-black.jpg')}}'); background-repeat: no-repeat; background-position: center; background-size:cover;">
             <div class="flex justify-center">
                 <span class="font-['Amiri'] text-[35px] text-white font-semibold">Book Your Appointment</span>
             </div>

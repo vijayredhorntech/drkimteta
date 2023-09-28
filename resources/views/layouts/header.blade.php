@@ -49,12 +49,12 @@
             <a href="{{route('user')}}" class="my-auto">
                 <button class="bg-[#437158] border-[1px] border-[#437158] text-white hover:bg-white hover:text-[#437158] hover:border-[1px] hover:border-[#437158] transition ease-in duration-200 px-4 py-3  h-max my-auto text-sm  rounded-full font-bold w-max"> <i class="fa fa-user"></i> </button>
             </a>
-            <a href="{{route('cart')}}" class="my-auto">
+            <Link href="{{route('cart')}}" class="my-auto">
                 <button class="bg-[#437158] border-[1px] border-[#437158] text-white hover:bg-white hover:text-[#437158] hover:border-[1px] hover:border-[#437158] transition ease-in duration-200 px-4 py-3 ml-2  h-max my-auto text-sm  rounded-full font-bold w-max"> <i class="fa fa-shopping-cart"></i> </button>
-            </a>
+            </Link>
             <a href="{{route('wishlist')}}" class="my-auto">
-                <button class="bg-[#437158] border-[1px] border-[#437158] text-white hover:bg-white hover:text-[#437158] hover:border-[1px] hover:border-[#437158] transition ease-in duration-200 px-4 py-3 ml-2  h-max my-auto text-sm  rounded-full font-bold w-max"> <i class="fa fa-heart"></i> </button>
-            </a>
+{{--                <button class="bg-[#437158] border-[1px] border-[#437158] text-white hover:bg-white hover:text-[#437158] hover:border-[1px] hover:border-[#437158] transition ease-in duration-200 px-4 py-3 ml-2  h-max my-auto text-sm  rounded-full font-bold w-max"> <i class="fa fa-heart"></i> </button>--}}
+{{--            </a>--}}
             <a href="{{route('contact')}}" class="my-auto lg:block  hidden">
                 <button class="bg-[#437158] border-[1px] border-[#437158] text-white hover:bg-white hover:text-[#437158] hover:border-[1px] hover:border-[#437158] transition ease-in duration-200 px-8 py-3 ml-2 h-max my-auto text-sm font rounded-sm  font-bold w-max">CONTACT US</button>
             </a>

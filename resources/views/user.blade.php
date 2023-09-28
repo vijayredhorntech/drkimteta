@@ -1,6 +1,7 @@
 <x-frontend-layout>
     <div class="w-full">
-        <div class="w-full h-[30vh] text-right bg-[url({{asset('/assets/images/services/banner16.png')}})] p-6 bg-center bg-cover flex lg:flex-row md:flex-row flex-col-reverse justify-end ">
+        <div class="w-full h-[30vh] text-right p-6 flex lg:flex-row md:flex-row flex-col-reverse justify-end "
+        style="background: url('{{asset('/assets/images/services/banner16.png')}}'); background-repeat: no-repeat; background-position: center; background-size:cover;">
         </div>
     </div>
 
@@ -11,7 +12,8 @@
             <div class="lg:w-[40%] md:w-[40%] w-[100%] h-full">
                 <div class="w-full flex h-full ">
                     <div class="w-full mx-auto rounded-md h-full">
-                        <div class=" bg-[url({{asset('/assets/images/appointment/delicate-branch-black.jpg')}})] bg-center bg-cover  shadow-xl shadow-gray-500 p-4 rounded-md">
+                        <div class="shadow-xl shadow-gray-500 p-4 rounded-md"
+                        style="background: url('{{asset('/assets/images/appointment/delicate-branch-black.jpg')}}'); background-repeat: no-repeat; background-position: center; background-size:cover;">
                             <div class="w-full">
                                 <div class="w-full flex justify-center mb-2">
                                     <span class="font-bold text-white text-[25px]">Sign In</span>
@@ -24,11 +26,11 @@
 
                             <div class="flex flex-col w-full mb-2">
                                 <label  class="text-gray-200 ">Number</label>
-                                <input class="border-[1px] border-gray-400 text-[20px] p-2 rounded-sm w-full focus:outline-none focus:ring-0 " type="email " name="" id="" placeholder="smaple@gmail.com">
+                                <input class="border-[1px] border-gray-400 text-[20px] p-2 rounded-sm w-full focus:outline-none focus:ring-0 placeholder:text-gray-300 " type="email " name="" id="" placeholder="sample@gmail.com">
                             </div>
                             <div class="flex flex-col w-full mb-2">
                                 <label  class="text-gray-200 ">Email</label>
-                                <input class="border-[1px] border-gray-400 text-[20px] p-2 rounded-sm w-full focus:outline-none focus:ring-0 " type="password" name="" id="" placeholder="password">
+                                <input class="border-[1px] border-gray-400 text-[20px] p-2 rounded-sm w-full focus:outline-none focus:ring-0 placeholder:text-gray-300 " type="password" name="" id="" placeholder="password">
                             </div>
 
                             <div class="flex  justify-center w-full mb-2 mt-8">
@@ -50,21 +52,21 @@
 
                                 <div class="w-[50%]">
                                     <label class="text-gray-500 " for="firstName">First Name</label>
-                                    <input class="border-[1px] border-gray-400 text-[20px] p-2 rounded-sm w-full focus:outline-none focus:ring-0 " type="text" placeholder="First Name">
+                                    <input class="border-[1px] border-gray-400 text-[20px] p-2 rounded-sm w-full focus:outline-none focus:ring-0 placeholder:text-gray-300 " type="text" placeholder="First Name">
                                 </div>
                                 <div class="w-[50%]">
                                     <label class="text-gray-500 " for="lastName">Last Name</label>
-                                    <input class="border-[1px] border-gray-400 text-[20px] p-2 rounded-sm w-full focus:outline-none focus:ring-0 " type="text" placeholder="Last Name">
+                                    <input class="border-[1px] border-gray-400 text-[20px] p-2 rounded-sm w-full focus:outline-none focus:ring-0 placeholder:text-gray-300" type="text" placeholder="Last Name">
                                 </div>
                             </div>
 
                             <div class="flex flex-col w-full mb-2">
                                 <label  class="text-gray-500 ">Number</label>
-                                <input class="border-[1px] border-gray-400 text-[20px] p-2 rounded-sm w-full focus:outline-none focus:ring-0 " type="number " name="" id="" placeholder="+91 1234567890">
+                                <input class="border-[1px] border-gray-400 text-[20px] p-2 rounded-sm w-full focus:outline-none focus:ring-0 placeholder:text-gray-300 " type="number " name="" id="" placeholder="+91 1234567890">
                             </div>
                             <div class="flex flex-col w-full mb-2">
                                 <label  class="text-gray-500 ">Email</label>
-                                <input class="border-[1px] border-gray-400 text-[20px] p-2 rounded-sm w-full focus:outline-none focus:ring-0 " type="email" name="" id="" placeholder="sample@gmail.com">
+                                <input class="border-[1px] border-gray-400 text-[20px] p-2 rounded-sm w-full focus:outline-none focus:ring-0 placeholder:text-gray-300 " type="email" name="" id="" placeholder="sample@gmail.com">
                             </div>
 
                             <div class="flex  justify-center w-full mb-2 mt-8">

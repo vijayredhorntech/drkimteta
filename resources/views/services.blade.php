@@ -1,7 +1,8 @@
 <x-frontend-layout>
     <div class="w-full">
         <div
-            class="w-full h-[50vh] text-right bg-[url({{asset('/assets/images/services/banner16.png')}})] p-6 bg-center bg-cover flex lg:flex-row md:flex-row flex-col-reverse justify-end ">
+            class="w-full h-[50vh] text-right p-6 flex lg:flex-row md:flex-row flex-col-reverse justify-end "
+            style="background: url('{{asset('/assets/images/services/banner16.png')}}'); background-repeat: no-repeat; background-position: center; background-size:cover;">
         </div>
     </div>
     <div class="max-w-7xl mx-auto px-4 mt-6 text-center mb-10">

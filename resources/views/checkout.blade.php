@@ -1,7 +1,8 @@
 <x-frontend-layout>
 
     <div class="w-full">
-        <div class="w-full h-[30vh] text-right bg-[url({{asset('/assets/images/services/banner16.png')}})] p-6 bg-center bg-cover flex lg:flex-row md:flex-row flex-col-reverse justify-end ">
+        <div class="w-full h-[30vh] text-right p-6 flex lg:flex-row md:flex-row flex-col-reverse justify-end "
+             style="background: url('{{asset('/assets/images/services/banner16.png')}}'); background-repeat: no-repeat; background-position: center; background-size:cover;">
         </div>
     </div>
 
@@ -22,16 +23,22 @@
                             <div class="w-full flex lg:flex-row md:flex-row sm:flex-row flex-col gap-4">
                                 <div class="mb-4 lg:w-1/2 md:w-1/2 sm:w-1/2 w-full">
                                     <label for="name" class="block text-gray-700 font-semibold mb-2">First Name</label>
-                                    <input type="text" id="name" name="name" class="w-full  px-4 py-2 border-[1px] border-[#437158] focus:border-[#437158] rounded-sm focus:outline-none focus:ring-0 " placeholder="First Name:" required>
+                                    <input type="text" id="name" name="name"
+                                           class="w-full  px-4 py-2 border-[1px] border-[#437158] focus:border-[#437158] rounded-sm focus:outline-none focus:ring-0 "
+                                           placeholder="First Name:" required>
                                 </div>
                                 <div class="mb-4 lg:w-1/2 md:w-1/2 sm:w-1/2 w-full">
                                     <label for="name" class="block text-gray-700 font-semibold mb-2">Last Name</label>
-                                    <input type="text" id="name" name="name" class="w-full  px-4 py-2 border-[1px] border-[#437158] focus:border-[#437158] rounded-sm focus:outline-none focus:ring-0 " placeholder="Last Name:" required>
+                                    <input type="text" id="name" name="name"
+                                           class="w-full  px-4 py-2 border-[1px] border-[#437158] focus:border-[#437158] rounded-sm focus:outline-none focus:ring-0 "
+                                           placeholder="Last Name:" required>
                                 </div>
                             </div>
                             <div class="mb-4">
                                 <label for="email" class="block text-gray-700 font-semibold mb-2">Country</label>
-                                <select  id="email" name="email" class="w-full  px-4 py-2 border-[1px] border-[#437158] focus:border-[#437158] rounded-sm focus:outline-none focus:ring-0" placeholder="Your Email Address:" required>
+                                <select id="email" name="email"
+                                        class="w-full  px-4 py-2 border-[1px] border-[#437158] focus:border-[#437158] rounded-sm focus:outline-none focus:ring-0"
+                                        placeholder="Your Email Address:" required>
                                     <option class="rounded-sm" value="India">India</option>
                                     <option class="rounded-sm" value="India">India</option>
                                     <option class="rounded-sm" value="India">India</option>
@@ -40,27 +47,39 @@
                             </div>
                             <div class="mb-4">
                                 <label for="email" class="block text-gray-700 font-semibold mb-2">Street Address</label>
-                                <input type="text" id="email" name="email" class="w-full  px-4 py-2 border-[1px] border-[#437158] focus:border-[#437158] rounded-sm focus:outline-none focus:ring-0" placeholder="Your Address:" required>
+                                <input type="text" id="email" name="email"
+                                       class="w-full  px-4 py-2 border-[1px] border-[#437158] focus:border-[#437158] rounded-sm focus:outline-none focus:ring-0"
+                                       placeholder="Your Address:" required>
                             </div>
                             <div class="mb-4">
                                 <label for="email" class="block text-gray-700 font-semibold mb-2">City</label>
-                                <input type="text" id="email" name="email" class="w-full  px-4 py-2 border-[1px] border-[#437158] focus:border-[#437158] rounded-sm focus:outline-none focus:ring-0" placeholder="Your City:" required>
+                                <input type="text" id="email" name="email"
+                                       class="w-full  px-4 py-2 border-[1px] border-[#437158] focus:border-[#437158] rounded-sm focus:outline-none focus:ring-0"
+                                       placeholder="Your City:" required>
                             </div>
                             <div class="mb-4">
                                 <label for="email" class="block text-gray-700 font-semibold mb-2">State</label>
-                                <input type="text" id="email" name="email" class="w-full  px-4 py-2 border-[1px] border-[#437158] focus:border-[#437158] rounded-sm focus:outline-none focus:ring-0" placeholder="Your State:" required>
+                                <input type="text" id="email" name="email"
+                                       class="w-full  px-4 py-2 border-[1px] border-[#437158] focus:border-[#437158] rounded-sm focus:outline-none focus:ring-0"
+                                       placeholder="Your State:" required>
                             </div>
                             <div class="mb-4">
                                 <label for="email" class="block text-gray-700 font-semibold mb-2">Pin Code</label>
-                                <input type="number" id="email" name="email" class="w-full  px-4 py-2 border-[1px] border-[#437158] focus:border-[#437158] rounded-sm focus:outline-none focus:ring-0" placeholder="Zip Code:" required>
+                                <input type="number" id="email" name="email"
+                                       class="w-full  px-4 py-2 border-[1px] border-[#437158] focus:border-[#437158] rounded-sm focus:outline-none focus:ring-0"
+                                       placeholder="Zip Code:" required>
                             </div>
                             <div class="mb-4">
                                 <label for="email" class="block text-gray-700 font-semibold mb-2">Email</label>
-                                <input type="email" id="email" name="email" class="w-full  px-4 py-2 border-[1px] border-[#437158] focus:border-[#437158] rounded-sm focus:outline-none focus:ring-0" placeholder="Your Email Address:" required>
+                                <input type="email" id="email" name="email"
+                                       class="w-full  px-4 py-2 border-[1px] border-[#437158] focus:border-[#437158] rounded-sm focus:outline-none focus:ring-0"
+                                       placeholder="Your Email Address:" required>
                             </div>
                             <div class="mb-4">
                                 <label for="email" class="block text-gray-700 font-semibold mb-2">Phone</label>
-                                <input type="email" id="email" name="email" class="w-full  px-4 py-2 border-[1px] border-[#437158] focus:border-[#437158] rounded-sm focus:outline-none focus:ring-0" placeholder="Your Phone Number" required>
+                                <input type="email" id="email" name="email"
+                                       class="w-full  px-4 py-2 border-[1px] border-[#437158] focus:border-[#437158] rounded-sm focus:outline-none focus:ring-0"
+                                       placeholder="Your Phone Number" required>
                             </div>
                         </form>
                     </div>
@@ -71,23 +90,31 @@
                             <h2 class="text-2xl font-semibold mb-4">Amount Details</h2>
 
                             <div class="flex flex-col">
-                                <div class="mb-2l mb-4">
-                                    <span class="font-semibold">Product Name:</span> Vitamin A<br>
-                                    <span class="font-semibold">Price:</span> ₹ 900.00
-                                </div>
-                                <div class="mb-2l">
-                                    <span class="font-semibold">Product Name:</span> Face Wash<br>
-                                    <span class="font-semibold">Price:</span> ₹ 1050.00
-                                </div>
-
+                                @foreach($cartItems as $cartItem)
+                                    <div class="mb-2l mb-4 flex flex-col">
+                                        <div>
+                                            <span
+                                                class="font-semibold">Product Name: </span>{{ $cartItem->product->name }}
+                                        </div>
+                                        <div>
+                                            <span class="font-semibold">Quantity: </span>{{ $cartItem->quantity }}
+                                        </div>
+                                        <div>
+                                            <span class="font-semibold">Price: </span>
+                                            ₹{{ round($cartItem->amount / $cartItem->quantity) }}
+                                        </div>
+                                    </div>
+                                @endforeach
                             </div>
-                            <!-- Add more details like quantity, subtotal, taxes, etc. -->
                             <div class="mt-4">
-                                <span class="text-lg font-semibold">Total:</span> ₹ 2000.00
+                                <span class="text-lg font-semibold">Total:</span> ₹{{ $total }}
                             </div>
                             <div class="mt-10 flex justify-end">
-                                <a href="#" >
-                                    <button class="bg-[#437158] border-[1px] border-[#437158] text-white hover:bg-white hover:text-[#437158] hover:border-[1px] hover:border-[#437158] transition ease-in duration-200 px-8 py-3 h-max my-auto text-sm font rounded-sm  font-bold w-max">Place Order</button>
+                                <a href="#">
+                                    <button
+                                        class="bg-[#437158] border-[1px] border-[#437158] text-white hover:bg-white hover:text-[#437158] hover:border-[1px] hover:border-[#437158] transition ease-in duration-200 px-8 py-3 h-max my-auto text-sm font rounded-sm  font-bold w-max">
+                                        Place Order
+                                    </button>
                                 </a>
                             </div>
 

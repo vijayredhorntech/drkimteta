@@ -68,6 +68,7 @@ class Products extends AbstractTable
         $table
             ->withGlobalSearch(columns: ['id', 'name', 'price', 'discount'])
             ->column('name', __('main.name'), sortable: true, searchable: true)
+            ->column('category.name', __('Category'), sortable: true, searchable: true)
             ->column('price', __('Price'), sortable: true, searchable: true)
             ->column('discount', __('Discount'), sortable: true, searchable: true)
             ->column('actions', __('main.action'))

@@ -1,7 +1,8 @@
 <x-frontend-layout>
 
     <div class="w-full">
-        <div class="w-full h-[50vh] text-right bg-[url({{asset('/assets/images/about/about-bg.jpg')}})] p-6 bg-center bg-cover flex lg:flex-row md:flex-row flex-col-reverse justify-end ">
+        <div class="w-full h-[50vh] text-right p-6 flex lg:flex-row md:flex-row flex-col-reverse justify-end "
+        style="background: url('{{asset('/assets/images/about/about-bg.jpg')}}'); background-repeat: no-repeat; background-position: center; background-size:cover;">
         </div>
     </div>
 
@@ -15,7 +16,7 @@
                 <p class="text-[#888] text-[18px] font-normal text-justify mt-4" style="letter-spacing: 0.7px">
                     Since our foundation in 2006,We Swasthya Herbocosmetics are recognised in the business as one of the main associates which is locked in as a specialist organisation of an extensive scope of Ayurvedic consultancy services which includes all types of liosining,Ayurvedic Regulatory services for plant Mfg license,GMP Certifications,Formulation Designs & Approvals from FDA & State Ayush Board, Plant inspections,Legal Queries, Clinical Trial & Customer complaint handling.
                 </p>
-                <p id="clinicalTrial" class="text-[#888] text-[18px] font-normal text-justify mt-4" style="letter-spacing: 0.7px">
+                <p  class="text-[#888] text-[18px] font-normal text-justify mt-4" style="letter-spacing: 0.7px">
                     Under the leadership of our mentor <span class="font-bold text-gray-500">“ Dr Vijay Kimtata ” </span>We have successfully developed more than 2000 result oriented formulations for our clients & few of them are well renowned brands today like Mother Sparsh, Roop Mantra, Petsaffa,Dr Ortho.
                 </p>
             </div>
@@ -24,11 +25,15 @@
 
     <div class="w-full flex ">
         <div class="xl:w-[70%] lg:w-[70%] md:w-[90%] w-[100%] mx-auto flex lg:flex-row-reverse md:flex-row-reverse flex-col-reverse gap-4 py-12 lg:px-8 md:px-6 ">
-            <img class="w-full h-full" src="{{asset('assets/images/home/banner2.jpg')}}" alt="">
+            <img class="w-full h-full"  src="{{asset('assets/images/home/banner2.jpg')}}" alt="">
         </div>
     </div>
+    
+    <div class="h-6 w-full mt-6 "  id="clinicalTrial">
+        
+    </div>
 
-    <div  class="w-full h-max mt-6 px-2">
+    <div  class="w-full h-max px-2">
         <div class="xl:w-[70%] lg:w-[70%] md:w-[90%] w-[100%] mx-auto flex lg:flex-row-reverse md:flex-row-reverse flex-col-reverse gap-4 py-4 lg:px-8 md:px-6 ">
             <div class="h-max bg:w-[50%] md:w-[50%] w-[100%] flex-col px-2 pl-4 ">
                 <h1 class="font-['Amiri'] text-[30px] text-gray-500 font-normal mt-2">Clinical Trials conducted under Supervision of Dr. Vijay</h1>

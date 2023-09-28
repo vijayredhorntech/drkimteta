@@ -3,6 +3,7 @@
 namespace App\Providers;
 
 use Illuminate\Support\Facades\Config;
+use Illuminate\Support\Facades\Schema;
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
@@ -20,6 +21,7 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
+        Schema::defaultStringLength(191);
         $smtpConfig = [
             'driver'    => 'smtp',
             'host'    => getSetting('smtp_host'),
@@ -39,7 +41,7 @@ class AppServiceProvider extends ServiceProvider
         Config::set('app.locale', getSetting('website_language'));
 
         $timezone = getSetting('timezone');
-    
+
         if (in_array($timezone, timezone_identifiers_list())) {
             Config::set('app.timezone', $timezone);
         } else {
